@@ -29,13 +29,21 @@ class RecipeController extends Controller
      */
     public function index()
     {
-        $recipes = Recipe::orderBy('updated_at', 'DESC')->paginate(5);
+        $recipes = Recipe::where('status', 1)->orderBy('updated_at', 'DESC')->paginate(10);
 
         return view('recipes', compact('recipes'));
     }
 
     public function detail(Request $request, $recipe_id)
     {
+        if (!(strpos($recipe_id, '-') !== FALSE)) {
+            //not found
+            return Redirect::back();
+        }
+
+        $arrId = explode('-',$recipe_id);
+        $recipe_id = $arrId[count($arrId) - 1];
+
         $recipe = Recipe::find($recipe_id);
 
         return view('recipe_detail', compact('recipe'));

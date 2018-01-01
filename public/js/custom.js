@@ -76,5 +76,5 @@
                 t = jQuery(window).scrollTop();
             t > s && (i = 100 * (t - s) / (e - o)), jQuery("#reading-position-indicator").css("width", i + "%")
         })
-    }), jQuery("head").append("<script src='js/switcher.js'><\/script>")
+    }), jQuery("head").append("<script src='/js/switcher.js'><\/script>")
 }(jQuery);

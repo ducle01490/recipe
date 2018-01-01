@@ -16,22 +16,21 @@ Route::get('/', array('as' => 'homepage', function () {
 }));
 
 
-Route::get('recipes', array('as' => 'recipes', 'uses' => 'RecipeController@index'));
+Route::group(['prefix' => 'recipes'], function () {
+	// Lay danh sach recipes
+	Route::get('/', array('as' => 'recipes', 'uses' => 'RecipeController@index'));
+	Route::get('/detail/{recipe_id}', array('as' => 'recipe_detail', 'uses' => 'RecipeController@detail'));
+});
 
-Route::get('recipe_detail/{recipe_id}', array('as' => 'recipe_detail', 'uses' => 'RecipeController@detail'));
 
-// Route::get('/recipe_detail', array('as' => 'recipe_detail', function () {
-//     return view('recipe_detail');
-// }));
+Route::group(['prefix' => 'orders'], function () {
+	// Lay danh sach recipes
+	Route::any('add', array('as' => 'add_order', 'uses' => 'OrderController@add'));
+});
 
-Route::get('/plan_two', array('as' => 'plan_two', function () {
-    return view('plan.two');
-}));
-
-Route::get('/plan_family', array('as' => 'plan_family', function () {
-    return view('plan.family');
-}));
-
-Route::get('/plan_detail', array('as' => 'plan_detail', function () {
-    return view('plan.detail');
-}));
+Route::group(['prefix' => 'plan'], function () {
+	// Lay danh sach recipes
+	Route::get('/two', array('as' => 'plan_two', 'uses' => 'PlanController@two'));
+	Route::get('/family', array('as' => 'plan_family', 'uses' => 'PlanController@family'));
+	Route::get('/detail/{title}', array('as' => 'plan_detail', 'uses' => 'PlanController@detail'));
+});

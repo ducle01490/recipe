@@ -52,7 +52,7 @@
             <div class="menu-item" text-left>
                 <div class="menu-img"><img src="images/recipe/01.jpg" alt=""></div>
                 <div class="menu-content">
-                    <h3><a href="{{ route("plan_detail") }}">Hoa quả nhập khẩu</a></h3>
+                    <h3><a href="{{ route("plan_detail", "1") }}">Hoa quả nhập khẩu</a></h3>
                     <p>Táo Envy, Nho nhập khẩu, Kiwi vàng. Chiết khấu 10%, Miễn phí vận chuyển nội thành Hà Nội.</p>
                     <div class="plan_item_bottom">
                         <span class="plan_time">Ngày kia: 13/12/2016</span>
@@ -65,7 +65,7 @@
             <div class="menu-item">
                 <div class="menu-img"><img src="images/recipe/02.jpg" alt=""></div>
                 <div class="menu-content">
-                                        <h3><a href="{{ route("plan_detail") }}">Hải sản cao cấp</a></h3>
+                                        <h3><a href="{{ route("plan_detail", "1") }}">Hải sản cao cấp</a></h3>
                     <p>Tôm Bắc Cực, Bạch Tuộc Ma Rốc, Cá tuyết Đan Mạch. Chiết khấu 10%, Miễn phí vận chuyển nội thành Hà Nội.</p>
                     <div class="plan_item_bottom">
                         <span class="plan_time">Ngày: 14/12/2016</span>
@@ -78,7 +78,7 @@
             <div class="menu-item" text-left>
                 <div class="menu-img"><img src="images/recipe/01.jpg" alt=""></div>
                 <div class="menu-content">
-                    <h3><a href="{{ route("plan_detail") }}">Hoa quả nhập khẩu</a></h3>
+                    <h3><a href="{{ route("plan_detail", "1") }}">Hoa quả nhập khẩu</a></h3>
                     <p>Táo Envy, Nho nhập khẩu, Kiwi vàng. Chiết khấu 10%, Miễn phí vận chuyển nội thành Hà Nội.</p>
                     <div class="plan_item_bottom">
                         <span class="plan_time">Ngày: 15/12/2016</span>
@@ -91,7 +91,7 @@
             <div class="menu-item">
                 <div class="menu-img"><img src="images/recipe/02.jpg" alt=""></div>
                 <div class="menu-content">
-                                        <h3><a href="{{ route("plan_detail") }}">Hải sản cao cấp</a></h3>
+                                        <h3><a href="{{ route("plan_detail", "1") }}">Hải sản cao cấp</a></h3>
                     <p>Tôm Bắc Cực, Bạch Tuộc Ma Rốc, Cá tuyết Đan Mạch. Chiết khấu 10%, Miễn phí vận chuyển nội thành Hà Nội.</p>
                     <div class="plan_item_bottom">
                         <span class="plan_time">Ngày: 16/12/2016</span>
@@ -104,7 +104,7 @@
             <div class="menu-item" text-left>
                 <div class="menu-img"><img src="images/recipe/01.jpg" alt=""></div>
                 <div class="menu-content">
-                    <h3><a href="{{ route("plan_detail") }}">Hoa quả nhập khẩu</a></h3>
+                    <h3><a href="{{ route("plan_detail", "1") }}">Hoa quả nhập khẩu</a></h3>
                     <p>Táo Envy, Nho nhập khẩu, Kiwi vàng. Chiết khấu 10%, Miễn phí vận chuyển nội thành Hà Nội.</p>
                     <div class="plan_item_bottom">
                         <span class="plan_time">Ngày: 17/12/2016</span>
@@ -117,7 +117,7 @@
             <div class="menu-item">
                 <div class="menu-img"><img src="images/recipe/02.jpg" alt=""></div>
                 <div class="menu-content">
-                                        <h3><a href="{{ route("plan_detail") }}">Hải sản cao cấp</a></h3>
+                                        <h3><a href="{{ route("plan_detail", "1") }}">Hải sản cao cấp</a></h3>
                     <p>Tôm Bắc Cực, Bạch Tuộc Ma Rốc, Cá tuyết Đan Mạch. Chiết khấu 10%, Miễn phí vận chuyển nội thành Hà Nội.</p>
                     <div class="plan_item_bottom">
                         <span class="plan_time">Ngày: 18/12/2016</span>
