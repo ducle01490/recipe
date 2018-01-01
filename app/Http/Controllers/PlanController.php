@@ -35,7 +35,7 @@ class PlanController extends Controller
      */
     public function two()
     {
-        $now = Carbon::now();
+        $now = Carbon::today();
 
         return view('plan.two');
     }
@@ -43,7 +43,7 @@ class PlanController extends Controller
     public function family()
     {
         $now = Carbon::now();
-        
+
         return view('plan.family');
     }
 
