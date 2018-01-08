@@ -33,6 +33,26 @@ class PlanController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function index()
+    {
+        $dt = Carbon::tomorrow();
+        $dtSevent = Carbon::tomorrow()->addDays(7);
+        $tomorrow = $dt->format("d/m/Y");
+
+
+        $tomorowMenu = Menu::whereDate('publishDate', $dt)->get()->first();
+
+        $sevenMenus = Menu::whereDate('publishDate', '>', $dt)->whereDate('publishDate', '<', $dtSevent)->get();
+
+
+        return view('plan.index', compact('tomorrow', 'tomorowMenu', 'sevenMenus'));
+    }
+
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function two()
     {
         $now = Carbon::today();
@@ -49,6 +69,16 @@ class PlanController extends Controller
 
     public function detail(Request $request, $title)
     {
-        return view('plan.detail');
+        if (!(strpos($title, '-') !== FALSE)) {
+            //not found
+            return Redirect::back();
+        }
+
+        $arrId = explode('-',$title);
+        $menuId = $arrId[count($arrId) - 1];
+
+        $recipe = Menu::find($menuId);
+
+        return view('plan.detail', compact('recipe'));
     }
 }

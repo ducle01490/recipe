@@ -17,7 +17,7 @@
                         <li class="submenu">
                             <a href="{{ route('homepage') }}"><i class="icon_house_alt"></i> Trang chủ</a>
                         </li>
-                        <!-- <li><a href="{{ route('plan_two') }}"><i class="ic icon-calendar-2"></i> Thực đơn theo ngày</a></li> -->
+                        <li><a href="{{ route('menu') }}"><i class="ic icon-calendar-2"></i> Thực đơn</a></li>
                         <li><a href="{{ route('recipes') }}"><i class="ic icon-recipes"></i> Công thức</a></li>
                     </ul>
                 </div>

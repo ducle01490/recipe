@@ -28,8 +28,9 @@ Route::group(['prefix' => 'orders'], function () {
 	Route::any('add', array('as' => 'add_order', 'uses' => 'OrderController@add'));
 });
 
-Route::group(['prefix' => 'plan'], function () {
+Route::group(['prefix' => 'menus'], function () {
 	// Lay danh sach recipes
+	Route::get('/', array('as' => 'menu', 'uses' => 'PlanController@index'));
 	Route::get('/two', array('as' => 'plan_two', 'uses' => 'PlanController@two'));
 	Route::get('/family', array('as' => 'plan_family', 'uses' => 'PlanController@family'));
 	Route::get('/detail/{title}', array('as' => 'plan_detail', 'uses' => 'PlanController@detail'));
