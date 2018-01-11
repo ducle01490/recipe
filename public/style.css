@@ -1068,12 +1068,9 @@ header .main-menu .menu-wrapper li a i {
 	font-weight: 800;
 }
 
-.recipe_detail .ul_list_default {
+.recipe_detail .ul_list_default, .recipe_detail .ul_list_default p .recipe_detail .ul_list, .recipe_detail .ul_list p {
     font-size: 16px;
-}
-
-.recipe_detail .ul_list {
-    font-size: 16px;
+    color: #2f3239;
 }
 
 .recipe_detail .ul_list_default ol {
