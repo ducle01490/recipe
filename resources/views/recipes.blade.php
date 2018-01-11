@@ -2,23 +2,6 @@
 
 @section('content')
 
-<section class="parallax-window" id="short" data-parallax="scroll" data-image-src="images/content/header-bg.jpg" data-natural-width="1400" data-natural-height="300">
-    <div id="sub_header">
-        <div class="container" id="sub_content">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>Công thức</h1>
-                    <div class="bread-crums">
-                        <a href="#">Trang chủ</a>
-                        <span class="bread-crums-span">»</span>
-                        <span class="current">Công thức</span>
-                    </div><!-- End bread-crums -->
-                </div>
-            </div><!-- End row -->
-        </div><!-- End container -->
-    </div>
-</section>
-
 <div class="white_bg">
     <div class="container margin_60">
         <div class="row row-new-recipe">

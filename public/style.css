@@ -397,7 +397,7 @@ header.sticky #logo img {
 .main-menu>ul>li>a {
     color: #fff;
     padding: 5px 15px 15px;
-    font-size: 14px;
+    font-size: 16px;
     margin: 0;
     font-weight: 500
 }
@@ -1066,6 +1066,14 @@ header .main-menu .menu-wrapper li a i {
 .recipe_detail h3 {
 	color: #0F346C;
 	font-weight: 800;
+}
+
+.recipe_detail .ul_list_default {
+    font-size: 16px;
+}
+
+.recipe_detail .ul_list {
+    font-size: 16px;
 }
 
 .recipe_detail .ul_list_default ol {

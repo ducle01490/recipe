@@ -35,6 +35,9 @@
     <link rel="stylesheet" href="{{ asset("/css/responsive.css") }}">
     <!-- Stylesheets Core Library-->
     <link href="https://fonts.googleapis.com/css?family=Itim" rel="stylesheet">
+
+    @yield('header')
+
   </head>
   <body class="sticky">
       <!-- Load Facebook SDK for JavaScript -->
