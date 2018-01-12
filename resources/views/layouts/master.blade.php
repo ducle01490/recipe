@@ -27,7 +27,7 @@
 
     <title>{{ $siteTitle or 'Hộp Xanh' }}</title>
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ asset("/images/favicon.png") }}" />
+    <link rel="shortcut icon" href="{{ asset("/images/favicon.png?v=1") }}" />
 
     <link rel="stylesheet" href="{{ asset("/style.css") }}">
     <link rel="stylesheet" href="{{ asset("/css/responsive.css") }}">

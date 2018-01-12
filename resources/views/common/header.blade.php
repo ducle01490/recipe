@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3 col-sm-5 col-xs-6">
-                <a href="index.html" id="logo">
+                <a href="{{route('homepage')}}" id="logo">
                     <img src="{{ asset("images/logo.png") }}" alt="">
                 </a>
             </div>

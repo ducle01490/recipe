@@ -12,7 +12,7 @@
                             <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
                             <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
                         </ul>
-                        <p>Recipes Food  |  All Rights Reserved.<br />Template By Themeforest</p>
+                        <p>Hộp Xanh  |  All Rights Reserved.<br /></p>
                     </div>
                 </div>
             </div>
