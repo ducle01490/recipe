@@ -46,7 +46,7 @@ body {
     font-size: 13px;
     line-height: 1.4;
     color: #555;
-    background-color: #f5f5f5;
+    background-color: #fff;
     font-family: 'Itim', cursive;
 }
 
@@ -1068,7 +1068,7 @@ header .main-menu .menu-wrapper li a i {
 	font-weight: 800;
 }
 
-.recipe_detail .ul_list_default, .recipe_detail .ul_list_default p .recipe_detail .ul_list, .recipe_detail .ul_list p {
+.recipe_detail .ul_list_default, .recipe_detail .ul_list_default p, .recipe_detail .ul_list, .recipe_detail .ul_list p {
     font-size: 16px;
     color: #2f3239;
 }
@@ -4284,7 +4284,7 @@ ul.fonticons-list li i {
 }
 
 footer {
-    background-color: #fff;
+    background-color: #fafafc;
     padding: 35px 0;
     border-top: 1px solid #ededed
 }

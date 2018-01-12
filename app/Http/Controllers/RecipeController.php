@@ -31,7 +31,7 @@ class RecipeController extends Controller
     {
         $recipes = Recipe::where('status', 1)->orderBy('updated_at', 'DESC')->paginate(10);
 
-        return view('recipes', compact('recipes'));
+        return view('recipes.index', compact('recipes'));
     }
 
     public function detail(Request $request, $recipe_id)
@@ -46,6 +46,10 @@ class RecipeController extends Controller
 
         $recipe = Recipe::find($recipe_id);
 
-        return view('recipe_detail', compact('recipe'));
+        $siteTitle = $recipe->title;
+        $siteDescription = 'Click để xem các món ăn hấp dẫn!';
+        $siteImage = $recipe->thumb;
+
+        return view('recipes.detail', compact('recipe', 'siteTitle', 'siteDescription', 'siteImage'));
     }
 }

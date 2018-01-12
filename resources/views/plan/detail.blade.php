@@ -24,112 +24,28 @@
     color: #222;
 }
 
-#product_social_share p {
-    font-size: 12px;
-    color: #8c8c8c
-}
-
-#product_social_share ul li a,
-.social_color ul li a i,
-.social_color_hover ul li a i {
-    line-height: 35px;
-    font-size: 16px;
-    width: 35px;
-    height: 35px;
-    display: block
-}
-
-#product_social_share ul {
-    margin: 0;
-    padding: 0 0 10px;
-    text-align: center
-}
-
-#product_social_share ul li {
+.share-facebook {
+    background-color: #3b5998;
+    height: 2.625rem;
+    border-radius: 1.3125rem;
     display: inline-block;
-    margin: 0 5px 10px
-}
-
-#product_social_share ul li a {
-    color: #666;
-    text-align: center;
-    background-color: #f2f2f2;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%
-}
-
-#product_social_share ul li a:hover {
-    background: #fff;
-    color: #111
-}
-
-#product_social_share {
-    text-align: center;
-    padding-top: 8px;
-    margin-top: 0;
-    margin-bottom: 0
-}
-
-#product_social_share ul {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-#product_social_share ul li {
-    display: inline-block;
-    margin: 0 5px 10px
-}
-
-#product_social_share ul li a {
-    color: #666;
-    text-align: center;
-    background-color: #f2f2f2;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px
-}
-
-#product_social_share ul li a i {
+    padding: 0 1.875rem;
     color: #fff;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%
-    line-height: 35px;
-    font-size: 16px;
-    width: 35px;
-    height: 35px;
-    display: block;
-    line-height: 35px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: .875rem;
+    -webkit-transition: background-color .2s;
+    transition: background-color .2s;
+    line-height: 2.625rem;
 }
 
-#product_social_share ul li a i {
-    background-color: #666
+.product-share ul {
+    text-align: center;
 }
 
-#product_social_share ul li a .fa-facebook {
-    background-color: #3b5998
-}
-
-#product_social_share ul li a .fa-facebook:hover {
-    background-color: #3b5998
-}
-
-#product_social_share ul li a .fa-google-plus {
-    background-color: #DD4B39
-}
-
-#product_social_share ul li a .fa-google-plus:hover {
-    background-color: #DD4B39
-}
-
-#product_social_share ul li a .fa-instagram {
-    background-color: #517FA4
-}
-
-#product_social_share ul li a .fa-instagram:hover {
-    background-color: #517FA4
+.product-share ul li {
+    display: inline-block;
+    margin: 5px;
 }
 
 .product-amount {
@@ -194,6 +110,21 @@
   opacity: 1;
 }
 
+.single-add-to-cart-button {
+    background: #02cdcf;
+    height: 2.625rem;
+    border-radius: 1.3125rem;
+    display: inline-block;
+    padding: 0 1.875rem;
+    color: #fff;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: .875rem;
+    -webkit-transition: background-color .2s;
+    transition: background-color .2s;
+}
+
+
 @media screen and (min-width: 1200px) {
     .recipe_top {
         margin-bottom: 30px;
@@ -207,13 +138,15 @@
             <div class="single-product" style="margin-bottom: 0px;">
                 <h1 class="product-title">{{$recipe->title}}</h1>
                 <div class="product-share">
-                    <div id="product_social_share">
                         <ul>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><button type="button" class="single-add-to-cart-button" data-toggle="modal" data-target="#modal-buy"><i class="icon_cart_alt"></i> Mua ngay
+                            </button></li>
+                            <li>
+                                <?php $detailUrl = Helper::toURI($recipe->title.'-'.$recipe->id, '-'); ?>
+                                <a type="button" class="share-facebook" href="https://www.facebook.com/sharer.php?u={{urlencode(route("plan_detail", $detailUrl))}}'" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;" rel="nofollow"><i class="fa fa-facebook"></i></i> Chia sẻ</a>
+                            </button>
+                            </li>
                         </ul>
-                    </div>
                 </div>
             </div>
         </div>
@@ -271,12 +204,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12">
-            <button type="button" class="single-add-to-cart-button" data-toggle="modal" data-target="#modal-buy"><i class="icon_cart_alt"></i> Mua ngay
-            </button>
         </div>
     </div>
 </div><!-- End container -->

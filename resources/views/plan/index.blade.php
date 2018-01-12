@@ -83,7 +83,8 @@
         @if(!is_null($tomorowMenu))
         <div class="col-md-5 col-sm-6 col-xs-12">
             <div class="col-new-recipe">
-                <a href="{{route("recipe_detail", $tomorowMenu->id)}}">
+                <?php $detailUrl = Helper::toURI($tomorowMenu->title.'-'.$tomorowMenu->id, '-'); ?>
+                <a href="{{ route("plan_detail", $detailUrl) }}">
                     <div class="photo"><img src="{{$tomorowMenu->thumb}}" alt=""></div>
                 </a>
             </div>
@@ -98,9 +99,9 @@
         @foreach($sevenMenus as $menu)
         <div class="col-md-3 col-sm-6 col-xs-6 menu-col-item">
             <div class="menu-item text-left">
-                <div class="menu-img"><img src="{{$menu->thumb}}" alt=""></div>
+                <?php $detailUrl1 = Helper::toURI($menu->title.'-'.$menu->id, '-'); ?>
+                <a href="{{ route("plan_detail", $detailUrl) }}"><div class="menu-img"><img src="{{$menu->thumb}}" alt=""></div></a>
                 <div class="menu-content">
-                    <?php $detailUrl1 = Helper::toURI($menu->title.'-'.$menu->id, '-'); ?>
                     <h3 class="menu-title"><a href="{{ route("plan_detail", $detailUrl1) }}">{{$menu->title}}</a></h3>
                     <div class="plan_item_bottom">
                         <span class="plan_time">Ngày: {{ (new Carbon\Carbon($menu->publishDate))->format('d/m/Y')}}</span>

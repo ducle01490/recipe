@@ -79,6 +79,10 @@ class PlanController extends Controller
 
         $recipe = Menu::find($menuId);
 
-        return view('plan.detail', compact('recipe'));
+        $siteTitle = $recipe->title;
+        $siteDescription = 'Click để xem các món ăn hấp dẫn!';
+        $siteImage = $recipe->thumb;
+
+        return view('plan.detail', compact('recipe', 'siteTitle', 'siteDescription', 'siteImage'));
     }
 }

@@ -31,7 +31,7 @@
           </li>
         </ul>
 
-        <a href="/pages/mission" id="discover-mission-btn" class="btn" name="button">Discover How</a>
+        <a href="{{route('menu')}}" id="discover-mission-btn" class="btn" name="button">Discover How</a>
       </div>
       <div class="col-xs-1 small-only benefits--buffer">
       </div>

@@ -722,7 +722,7 @@
         <div class="discover--outro--summary legacy hide">
           Blue Apron's uniquely integrated model means better ingredients, better pricing and a better planet for us all.
         </div>
-        <a id="get-cooking-btn" class="btn get-cooking-btn" name="button" href="/users/sign_up">Get Cooking</a>
+        <a id="get-cooking-btn" class="btn get-cooking-btn" name="button" href="{{route('menu')}}">Get Cooking</a>
       </div>
     </div>
   </div>
