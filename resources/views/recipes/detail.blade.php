@@ -141,7 +141,7 @@
                         <ul>
                             <li>
                                 <?php $detailUrl = Helper::toURI($recipe->title.'-'.$recipe->id, '-'); ?>
-                                <a type="button" class="share-facebook" href="https://www.facebook.com/sharer.php?u={{urlencode(route("recipe_detail", $detailUrl))}}'" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;" rel="nofollow"><i class="fa fa-facebook"></i></i> Chia sẻ</a>
+                                <a type="button" class="share-facebook" href="https://www.facebook.com/sharer.php?u={{urlencode(route("recipe_detail", $detailUrl))}}" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;" rel="nofollow"><i class="fa fa-facebook"></i></i> Chia sẻ</a>
                             </button>
                             </li>
                         </ul>
