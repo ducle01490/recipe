@@ -77,7 +77,10 @@ class PlanController extends Controller
         $arrId = explode('-',$title);
         $menuId = $arrId[count($arrId) - 1];
 
-        $recipe = Menu::find($menuId);
+        $recipe = Menu::where('id', $menuId)->where('status', 1)->get()->first();
+        if (is_null($recipe)) {
+            abort(404);
+        }
 
         $siteTitle = $recipe->title;
         $siteDescription = 'Click để xem các món ăn hấp dẫn!';

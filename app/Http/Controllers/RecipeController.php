@@ -44,7 +44,10 @@ class RecipeController extends Controller
         $arrId = explode('-',$recipe_id);
         $recipe_id = $arrId[count($arrId) - 1];
 
-        $recipe = Recipe::find($recipe_id);
+        $recipe = Recipe::where('id', $recipe_id)->where('status', 1)->get()->first();
+        if (is_null($recipe)) {
+            abort(404);
+        }
 
         $siteTitle = $recipe->title;
         $siteDescription = 'Click để xem các món ăn hấp dẫn!';
