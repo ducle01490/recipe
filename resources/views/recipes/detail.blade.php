@@ -220,6 +220,24 @@
                 {{ csrf_field() }}
                 <input type="hidden" name="productId" id="productId" value="{{$recipe->id}}"/>
                 <div class="modal-body">
+                    <div id="success-msg" class="hide">
+                        <div class="alert alert-info alert-dismissible fade in" role="alert">
+                          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
+                          <strong>Thành công!</strong> Cảm ơn quý khách, chúng tôi sẽ liên lạc lại trong thời gian sớm nhất!!
+                        </div>
+                    </div>
+
+                    <div id="failed-msg" class="hide">
+                        <div class="alert alert-warning alert-dismissible fade in" role="alert">
+                          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
+                          <strong id="failed-text"></strong>
+                        </div>
+                    </div>
+
                     <div class="form-login">
                         <div class="box-body">
                             <div class="form-group">
@@ -228,23 +246,35 @@
 
                             <div class="form-group">
                                 <label for="name">Tên</label>
-                                <input type="text" class="form-control" id="name" placeholder="Tên" required="">
+                                <input type="text" class="form-control" id="name" value="{{ old('name') }}" placeholder="Tên" required="">
+                                <span class="text-danger">
+                                    <strong id="name-error"></strong>
+                                </span>
                             </div>
                             <div class="form-group">
                                 <label for="address">Địa chỉ</label>
-                                <input type="text" class="form-control" id="address" placeholder="Địa chỉ" required="">
+                                <input type="text" class="form-control" id="address" value="{{ old('address') }}" placeholder="Địa chỉ" required="">
+                                <span class="text-danger">
+                                    <strong id="address-error"></strong>
+                                </span>
                             </div>
                             <div class="form-group">
                                 <label for="phone">Số điện thoại</label>
-                                <input type="text" class="form-control" id="phone" placeholder="Số điện thoại" required="">
+                                <input type="text" class="form-control" id="phone" value="{{ old('phone') }}" placeholder="Số điện thoại" required="">
+                                <span class="text-danger">
+                                    <strong id="phone-error"></strong>
+                                </span>
                             </div>
                             <div class="form-group">
                                 <label for="phone">Số lượng</label>
-                                <input type="text" class="form-control" id="quantity" placeholder="Số lượng" required="" value="1">
+                                <input type="text" class="form-control" id="quantity" value="{{ old('quantity') }}" placeholder="Số lượng" required="" value="1">
+                                <span class="text-danger">
+                                    <strong id="quantity-error"></strong>
+                                </span>
                             </div>
                             <div class="form-group">
                                 <label for="phone">Ghi chú</label>
-                                <textarea cols="form-control" id="note" placeholder="Ghi chú (thời gian giao hàng...)" style="width: 100%;"></textarea>
+                                <textarea cols="form-control" id="note" value="{{ old('note') }}" placeholder="Ghi chú (thời gian giao hàng...)" style="width: 100%;"></textarea>
                             </div>
                         </div>
                         <!-- /.box-body -->
@@ -288,16 +318,42 @@
 
             console.log(fData);
 
+            $('#failed-text').html("");
+            $('#failed-msg').addClass('hide');
+
             $.ajax({
                 url: "/orders/add",
                 data: fData,
                 type: "POST",
                 dataType : "json",
-                success: function( res ) {
-                    if(res["status"] == "success") {
-                        alert("Đặt hàng thành công! Cảm ơn quý khách. Chúng tôi sẽ liên lạc với quý khách sớm nhất có thể!");
-                    } else {
-                        alert(res["messages"]);
+                success: function( data ) {
+                    if(data.errors) {
+                        if(data.errors.name){
+                            $( '#name-error' ).html( data.errors.name[0] );
+                        }
+                        if(data.errors.address){
+                            $( '#address-error' ).html( data.errors.address[0] );
+                        }
+                        if(data.errors.phone){
+                            $( '#phone-error' ).html( data.errors.phone[0] );
+                        }
+                        if(data.errors.quantity){
+                            $( '#quantity-error' ).html( data.errors.quantity[0] );
+                        }
+                        
+                    }
+
+                    if(data.success == 0) {
+                        $('#failed-text').html(data.messages);
+                        $('#failed-msg').removeClass('hide');
+                    }
+
+                    if(data.success == 1) {
+                        $('#success-msg').removeClass('hide');
+                        setInterval(function(){ 
+                            $('#modal-buy').modal('hide');
+                            $('#success-msg').addClass('hide');
+                        }, 3000);
                     }
                 },
                 error: function( xhr, status, errorThrown ) {

@@ -44,6 +44,17 @@ class OrderController extends Controller
     public function add(Request $request)
     {
         if ($request->ajax()) {
+            $validator = Validator::make($request->all(), [
+                'name' => 'required|max:255',
+                'address' => 'required',
+                'phone' => 'phone:VN',
+                'quantity' => 'required|numeric',
+                'productId' => 'required|exists:menus,id'
+            ]);
+
+            if ($validator->fails()) {
+                return Response::json(['errors' => $validator->errors()]);
+            }
             $data = $request->all();
 
             $name = $data["name"];
@@ -52,9 +63,11 @@ class OrderController extends Controller
             $quantity = $data["quantity"];
             $note = $data["note"];
             $productId = $data["productId"];
-            $type = $data["type"];
-            //TYPE: 1-recipe 0-menu
+            // $type = $data["type"];
+            //TYPE: 1-recipe 2-menu
             //TODO: validate data
+
+            $type = 2;
             $user = DB::table('customers')->where('name', $name)->first();
 
             $customer = Customer::where([
@@ -71,7 +84,7 @@ class OrderController extends Controller
                 $customer->save();
 
                 if (!$customer->id) {
-                    return Response::json(array('status'=>'failed', 'messages' => "Lỗi khi tạo dữ liệu. Vui lòng liên hệ hotline!"));
+                    return Response::json(array('success' => 0, 'messages' => "Lỗi khi tạo dữ liệu. Vui lòng liên hệ hotline!"));
                 }
             }
 
@@ -85,10 +98,10 @@ class OrderController extends Controller
 
             $order->save();
             if (!$order->id) {
-                return Response::json(array('status'=>'failed', 'messages' => "Lỗi khi tạo dữ liệu. Vui lòng liên hệ hotline!"));
+                return Response::json(array('success' => 0, 'messages' => "Lỗi khi tạo dữ liệu. Vui lòng liên hệ hotline!"));
             }
             
-            return Response::json(array('status'=>'success', 'messages' => "Received data"));
+            return Response::json(array('success' => 1, 'messages' => "Received data"));
         }
     }
 }

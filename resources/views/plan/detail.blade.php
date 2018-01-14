@@ -222,37 +222,67 @@
                 {{ csrf_field() }}
                 <input type="hidden" name="productId" id="productId" value="{{$recipe->id}}"/>
                 <div class="modal-body">
-                    <div class="form-login">
+                    <div id="success-msg" class="hide">
+                        <div class="alert alert-info alert-dismissible fade in" role="alert">
+                          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
+                          <strong>Thành công!</strong> Cảm ơn quý khách, chúng tôi sẽ liên lạc lại trong thời gian sớm nhất!!
+                        </div>
+                    </div>
+
+                    <div id="failed-msg" class="hide">
+                        <div class="alert alert-warning alert-dismissible fade in" role="alert">
+                          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
+                          <strong id="failed-text"></strong>
+                        </div>
+                    </div>
+
+                    <div class="form-login" id="body-form">
                         <div class="box-body">
                             <div class="form-group">
-                                <label class="price">Giá: <span class="product-amount">{{number_format($recipe->price, 0, ',', '.')}} VNĐ</span></label>
+                                <label class="price">Đơn giá: <span class="product-amount">{{number_format($recipe->price, 0, ',', '.')}} VNĐ</span></label>
                             </div>
 
                             <div class="form-group">
                                 <label for="name">Tên</label>
-                                <input type="text" class="form-control" id="name" placeholder="Tên" required="">
+                                <input type="text" class="form-control" id="name" value="{{ old('name') }}" placeholder="Tên" required="">
+                                <span class="text-danger">
+                                    <strong id="name-error"></strong>
+                                </span>
                             </div>
                             <div class="form-group">
                                 <label for="address">Địa chỉ</label>
-                                <input type="text" class="form-control" id="address" placeholder="Địa chỉ" required="">
+                                <input type="text" class="form-control" id="address" value="{{ old('address') }}" placeholder="Địa chỉ" required="">
+                                <span class="text-danger">
+                                    <strong id="address-error"></strong>
+                                </span>
                             </div>
                             <div class="form-group">
                                 <label for="phone">Số điện thoại</label>
-                                <input type="text" class="form-control" id="phone" placeholder="Số điện thoại" required="">
+                                <input type="text" class="form-control" id="phone" value="{{ old('phone') }}" placeholder="Số điện thoại" required="">
+                                <span class="text-danger">
+                                    <strong id="phone-error"></strong>
+                                </span>
                             </div>
                             <div class="form-group">
                                 <label for="phone">Số lượng</label>
-                                <input type="text" class="form-control" id="quantity" placeholder="Số lượng" required="" value="1">
+                                <input type="text" class="form-control" id="quantity" value="{{ old('quantity') }}" placeholder="Số lượng" required="" value="1">
+                                <span class="text-danger">
+                                    <strong id="quantity-error"></strong>
+                                </span>
                             </div>
                             <div class="form-group">
                                 <label for="phone">Ghi chú</label>
-                                <textarea cols="form-control" id="note" placeholder="Ghi chú (thời gian giao hàng...)" style="width: 100%;"></textarea>
+                                <textarea cols="form-control" id="note" value="{{ old('note') }}" placeholder="Ghi chú (thời gian giao hàng...)" style="width: 100%;"></textarea>
                             </div>
                         </div>
                         <!-- /.box-body -->
                     </div>
                 </div>
-                <div class="modal-footer">
+                <div class="modal-footer" id="modal-footer">
                     <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Đóng
                     </button>
                     <input type="submit" class="btn btn-primary" id="upload" value="Đặt hàng"/>
@@ -276,6 +306,11 @@
             }
         });
 
+        $('#modal-buy').on('shown.bs.modal', function (e) {
+            $('#body-form').show();
+            $('#modal-footer').show();
+        })
+
         $('#orderForm').on('submit', function(e) {
             e.preventDefault();
 
@@ -286,24 +321,51 @@
             var fNote = $("#note").val();
             var fProductId = $("#productId").val();
 
-            var fData = {"name": fName, "address": fAddress, "phone": fPhone, "quantity": fQuantity, "note": fNote, "productId": fProductId, "type": 2};
+            var fData = {"name": fName, "address": fAddress, "phone": fPhone, "quantity": fQuantity, "note": fNote, "productId": fProductId};
 
-            console.log(fData);
+            $('#failed-text').html("");
+            $('#failed-msg').addClass('hide');
+            $('#success-msg').addClass('hide');
+
+            $( '#name-error' ).html("");
+            $( '#address-error' ).html("");
+            $( '#phone-error' ).html("");
+            $( '#quantity-error' ).html("");
 
             $.ajax({
                 url: "/orders/add",
                 data: fData,
                 type: "POST",
-                dataType : "json",
-                success: function( res ) {
-                    if(res["status"] == "success") {
-                        alert("Đặt hàng thành công! Cảm ơn quý khách. Chúng tôi sẽ liên lạc với quý khách sớm nhất có thể!");
-                    } else {
-                        alert(res["messages"]);
+                success: function( data ) {
+                    if(data.errors) {
+                        if(data.errors.name){
+                            $( '#name-error' ).html( data.errors.name[0] );
+                        }
+                        if(data.errors.address){
+                            $( '#address-error' ).html( data.errors.address[0] );
+                        }
+                        if(data.errors.phone){
+                            $( '#phone-error' ).html( data.errors.phone[0] );
+                        }
+                        if(data.errors.quantity){
+                            $( '#quantity-error' ).html( data.errors.quantity[0] );
+                        }
+                    }
+
+                    if(data.success == 0) {
+                        $('#failed-text').html(data.messages);
+                        $('#failed-msg').removeClass('hide');
+                    }
+
+                    if(data.success == 1) {
+                        $('#success-msg').removeClass('hide');
+                        $('#body-form').hide();
+                        $('#modal-footer').hide();
                     }
                 },
                 error: function( xhr, status, errorThrown ) {
-                    console.log( "Sorry, there was a problem!" );
+                    $('#failed-text').html("Lỗi khi tạo dữ liệu. Vui lòng liên hệ hotline!");
+                    $('#failed-msg').removeClass('hide');
                 }
             });
         });
