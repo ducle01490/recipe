@@ -95,7 +95,7 @@
     <script src="{{ asset("/js/jquery.nicescroll.min.js") }}"></script>
     <script src="{{ asset("/js/jquery.themepunch.plugins.min.js") }}"></script>
     <script src="{{ asset("/js/jquery.themepunch.revolution.min.js") }}"></script>
-    <script src="{{ asset("/js/custom.js") }}"></script>
+    <script src="{{ asset("/js/custom.min.js") }}"></script>
 
     @yield('script')
     
