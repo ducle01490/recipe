@@ -7,7 +7,7 @@
         <div class="row row-new-recipe">
             @foreach($recipes as $recipe)
             <?php $detailUrl = Helper::toURI($recipe->title.'-'.$recipe->id, '-'); ?>
-            <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="col-md-3 col-sm-6 col-xs-6">
                 <div class="col-new-recipe">
                     <a href="{{route("recipe_detail", $detailUrl)}}">
                         <div class="photo"><img src="{{$recipe->thumb}}" alt=""></div>
