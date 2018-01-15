@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Imprima&subset=latin,latin-ext);
+/*@import url(https://fonts.googleapis.com/css?family=Imprima&subset=latin,latin-ext);
 @import url(css/base.css);
 @import url(css/bootstrap.min.css);
 @import url(css/loaded.css);
@@ -8,7 +8,7 @@
 @import url(css/icomoon/icomoon.css);
 @import url(css/settings.css);
 @import url(css/ion.rangeslider/css/ion.rangeSlider.css);
-@import url(css/ion.rangeslider/css/ion.rangeSlider.skinNice.css);
+@import url(css/ion.rangeslider/css/ion.rangeSlider.skinNice.css);*/
 .main-menu a,
 header {
     -webkit-transition: all .3s;

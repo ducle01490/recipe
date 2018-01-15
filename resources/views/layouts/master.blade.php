@@ -29,8 +29,11 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{ asset("/images/favicon.png?v=1") }}" />
 
+    <link rel="stylesheet" href="{{ asset('/css/base.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/loaded.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/font-awesome/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/settings.css') }}">
     <link rel="stylesheet" href="{{ mix('css/style.min.css') }}">
     <link rel="stylesheet" href="{{ mix('css/responsive.min.css') }}">
     <!-- Stylesheets Core Library-->
