@@ -67,6 +67,8 @@
 
 </style>
 
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+
 <div class="container margin_60">
     <div class="row row-tomorow">
         <div class="col-md-7 col-sm-6 col-xs-12">
@@ -85,7 +87,13 @@
             <div class="col-new-recipe">
                 <?php $detailUrl = Helper::toURI($tomorowMenu->title.'-'.$tomorowMenu->id, '-'); ?>
                 <a href="{{ route("plan_detail", $detailUrl) }}">
-                    <div class="photo"><img src="{{$tomorowMenu->thumb}}" alt=""></div>
+                    <div class="photo">
+                        <amp-img src="{{$tomorowMenu->thumb}}"
+                              width="100"
+                              height="100"
+                              layout="responsive"
+                              alt="{{$tomorowMenu->title}}"></amp-img>
+                    </div>
                 </a>
             </div>
         </div>
@@ -100,7 +108,15 @@
         <div class="col-md-3 col-sm-6 col-xs-6 menu-col-item">
             <div class="menu-item text-left">
                 <?php $detailUrl1 = Helper::toURI($menu->title.'-'.$menu->id, '-'); ?>
-                <a href="{{ route("plan_detail", $detailUrl) }}"><div class="menu-img"><img src="{{$menu->thumb}}" alt=""></div></a>
+                <a href="{{ route("plan_detail", $detailUrl) }}">
+                    <div class="menu-img">
+                        <amp-img src="{{$menu->thumb}}"
+                              width="100"
+                              height="100"
+                              layout="responsive"
+                              alt="{{$menu->title}}"></amp-img>
+                    </div>
+                </a>
                 <div class="menu-content">
                     <h3 class="menu-title"><a href="{{ route("plan_detail", $detailUrl1) }}">{{$menu->title}}</a></h3>
                     <div class="plan_item_bottom">
