@@ -3,19 +3,19 @@
 @section('content')
 	
   <!--SlideShow-->
-  @include('common.slideshow')
+  @include('common.home.slideshow')
   <!--END SlideShow-->
 
-  <link rel="stylesheet" href="{{ asset("/blueapron.css") }}">
-  @include('common.discover')
+  <link rel="stylesheet" href="{{ mix('css/blueapron.min.css') }}">
+  @include('common.home.discover')
 
-  @include('common.checklist')
+  @include('common.home.checklist')
 
-  @include('common.benefit')
+  @include('common.home.benefit')
 
-  @include('common.instagram')
+  @include('common.home.instagram')
 
-  @include('common.homePageSection')
+  @include('common.home.homePageSection')
   
   
       

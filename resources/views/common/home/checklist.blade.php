@@ -2,10 +2,10 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12 checklist--body">
-        <img alt="healthy fresh ingredients Whats Inside Your Delivery" class="checklist--body--mobile-background-img mobile-only legacy hide" src="https://image-service.blueapron.com/render/q/quality/75/src/https%3A%2F%2Fmedia.blueapron.com%2Fhome_page%2FWhatsInTheDelivery%2F011317_WhatsInside_mobile.jpg">
-        <img alt="healthy fresh ingredients Whats inside your delivery" class="checklist--body--background-img small-hide legacy hide" src="https://image-service.blueapron.com/render/q/quality/75/src/https%3A%2F%2Fmedia.blueapron.com%2Fhome_page%2FWhatsInTheDelivery%2F011317_WhatsInside_desktop.jpg">
-        <img alt="healthy fresh ingredients Whats Inside Your Delivery" class="checklist--body--mobile-background-img mobile-only refresh" src="https://image-service.blueapron.com/render/q/quality/75/src/https%3A%2F%2Fmedia.blueapron.com%2Fhome_page%2FWhatsInTheDelivery%2F20171213_HomepageUpdate_WhatsInside_Mobile.jpg">
-        <img alt="healthy fresh ingredients Whats inside your delivery" class="checklist--body--background-img small-hide refresh" src="https://image-service.blueapron.com/render/q/quality/75/src/https%3A%2F%2Fmedia.blueapron.com%2Fhome_page%2FWhatsInTheDelivery%2F20171213_HomepageUpdate_WhatsInside_1200_Desktop.jpg">
+        <img alt="healthy fresh ingredients Whats Inside Your Delivery" class="checklist--body--mobile-background-img mobile-only legacy hide" src="{{asset('/images/home/011317_WhatsInside_mobile.jpg')}}">
+        <img alt="healthy fresh ingredients Whats inside your delivery" class="checklist--body--background-img small-hide legacy hide" src="{{asset('/images/home/011317_WhatsInside_desktop.jpg')}}">
+        <img alt="healthy fresh ingredients Whats Inside Your Delivery" class="checklist--body--mobile-background-img mobile-only refresh" src="{{asset('/images/home/20171213_HomepageUpdate_WhatsInside_Mobile.jpg')}}">
+        <img alt="healthy fresh ingredients Whats inside your delivery" class="checklist--body--background-img small-hide refresh" src="{{asset('/images/home/20171213_HomepageUpdate_WhatsInside_1200_Desktop.jpg')}}">
         <div class="content">
           <div class="content--header">
             <h5 class="section-title">
@@ -123,7 +123,7 @@
                 <div class="pricing--cost-subheader">
                   / serving
                 </div>
-                <img class="legacy hide" src="https://media.blueapron.com/home_page/Icons/freedelivery.svg" alt="healthy fresh ingredients free delivery stamp">
+                <img class="legacy hide" src="{{asset('/images/home/freedelivery.svg')}}" alt="healthy fresh ingredients free delivery stamp">
               </div>
               <a class="btn" name="button" id="choose-plan-btn" href="/users/sign_up">Choose Your Plan</a>
             </div>

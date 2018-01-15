@@ -13,3 +13,19 @@ let mix = require('laravel-mix');
 
 mix.js('resources/assets/js/app.js', 'public/js')
    .sass('resources/assets/sass/app.scss', 'public/css');
+
+mix.styles([
+    'public/style.css'
+], 'public/css/style.min.css')
+
+mix.styles([
+    'public/css/responsive.css'
+], 'public/css/responsive.min.css')
+
+mix.styles([
+    'public/blueapron.css'
+], 'public/css/blueapron.min.css')
+
+if (mix.inProduction()) {
+    mix.version();
+}

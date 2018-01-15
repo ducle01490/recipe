@@ -11,11 +11,11 @@
         <div class="slide-container owl-carousel our-mission" style="opacity: 1; display: block;">
             <div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 15000px; left: 0px; display: block;"><div class="owl-item" style="width: 750px;"><div class="slide">
               <div class="slide--photo">
-                <img alt="Instagram Picture from Kristine Gordon" src="https://image-service.blueapron.com/render/q/quality/75/src/https%3A%2F%2Fmedia.blueapron.com%2Fhome_page%2FSocialCarousel%2FBASocialImage3.jpg">
+                <img alt="Instagram Picture from Kristine Gordon" src="{{asset('/images/home/BASocialImage3.jpg')}}">
               </div>
               <div class="slide--details">
                 <div class="slide--details--header">
-                  <img alt="Instagram Avatar for Kristine Gordon" src="https://image-service.blueapron.com/render/q/quality/75/src/https%3A%2F%2Fmedia.blueapron.com%2Fhome_page%2FSocialCarousel%2FBASocialImage3_User.jpg">
+                  <img alt="Instagram Avatar for Kristine Gordon" src="{{asset('/images/home/BASocialImage3_User.jpg')}}">
                   <span>Kristine Gordon</span>
                 </div>
                 <div class="slide--details--body">
@@ -24,11 +24,11 @@
               </div>
             </div></div><div class="owl-item" style="width: 750px;"><div class="slide">
               <div class="slide--photo">
-                <img alt="Instagram Picture from crystalbgarcia" src="https://image-service.blueapron.com/render/q/quality/75/src/https%3A%2F%2Fmedia.blueapron.com%2Fhome_page%2FSocialCarousel%2FBASocialImage2.jpg">
+                <img alt="Instagram Picture from crystalbgarcia" src="{{asset('/images/home/BASocialImage2.jpg')}}">
               </div>
               <div class="slide--details">
                 <div class="slide--details--header">
-                  <img alt="Instagram Avatar for crystalbgarcia" src="https://image-service.blueapron.com/render/q/quality/75/src/https%3A%2F%2Fmedia.blueapron.com%2Fhome_page%2FSocialCarousel%2FBASocialImage2_User.jpg">
+                  <img alt="Instagram Avatar for crystalbgarcia" src="{{asset('/images/home/BASocialImage2_User.jpg')}}">
                   <span>crystalbgarcia</span>
                 </div>
                 <div class="slide--details--body">
@@ -37,11 +37,11 @@
               </div>
             </div></div><div class="owl-item" style="width: 750px;"><div class="slide">
               <div class="slide--photo">
-                <img alt="Instagram Picture from jakethelittlelion" src="https://image-service.blueapron.com/render/q/quality/75/src/https%3A%2F%2Fmedia.blueapron.com%2Fhome_page%2FSocialCarousel%2FBASocialImage1.jpg">
+                <img alt="Instagram Picture from jakethelittlelion" src="{{asset('/images/home/BASocialImage1.jpg')}}">
               </div>
               <div class="slide--details">
                 <div class="slide--details--header">
-                  <img alt="Instagram Avatar for jakethelittlelion" src="https://image-service.blueapron.com/render/q/quality/75/src/https%3A%2F%2Fmedia.blueapron.com%2Fhome_page%2FSocialCarousel%2FBASocialImage1_User.jpg">
+                  <img alt="Instagram Avatar for jakethelittlelion" src="{{asset('/images/home/BASocialImage1_User.jpg')}}">
                   <span>jakethelittlelion</span>
                 </div>
                 <div class="slide--details--body">
@@ -50,11 +50,11 @@
               </div>
             </div></div><div class="owl-item" style="width: 750px;"><div class="slide">
               <div class="slide--photo">
-                <img alt="Instagram Picture from tfletchet" src="https://image-service.blueapron.com/render/q/quality/75/src/https%3A%2F%2Fmedia.blueapron.com%2Fhome_page%2FSocialCarousel%2FBASocialImage4.jpg">
+                <img alt="Instagram Picture from tfletchet" src="{{asset('/images/home/BASocialImage4.jpg')}}">
               </div>
               <div class="slide--details">
                 <div class="slide--details--header">
-                  <img alt="Instagram Avatar for tfletchet" src="https://image-service.blueapron.com/render/q/quality/75/src/https%3A%2F%2Fmedia.blueapron.com%2Fhome_page%2FSocialCarousel%2FBASocialImage4_User.jpg">
+                  <img alt="Instagram Avatar for tfletchet" src="{{asset('/images/home/BASocialImage4_User.jpg')}}">
                   <span>tfletchet</span>
                 </div>
                 <div class="slide--details--body">
@@ -63,11 +63,11 @@
               </div>
             </div></div><div class="owl-item" style="width: 750px;"><div class="slide">
               <div class="slide--photo">
-                <img alt="Instagram Picture from michaelmclark" src="https://image-service.blueapron.com/render/q/quality/75/src/https%3A%2F%2Fmedia.blueapron.com%2Fhome_page%2FSocialCarousel%2FBASocialImage5.jpg">
+                <img alt="Instagram Picture from michaelmclark" src="{{asset('/images/home/BASocialImage5.jpg')}}">
               </div>
               <div class="slide--details">
                 <div class="slide--details--header">
-                  <img alt="Instagram Avatar for michaelmclark" src="https://image-service.blueapron.com/render/q/quality/75/src/https%3A%2F%2Fmedia.blueapron.com%2Fhome_page%2FSocialCarousel%2FBASocialImage5_User.jpg">
+                  <img alt="Instagram Avatar for michaelmclark" src="{{asset('/images/home/BASocialImage5_User.jpg')}}">
                   <span>michaelmclark</span>
                 </div>
                 <div class="slide--details--body">
@@ -76,11 +76,11 @@
               </div>
             </div></div><div class="owl-item" style="width: 750px;"><div class="slide">
               <div class="slide--photo">
-                <img alt="Instagram Picture from moosethebulldogsf" src="https://image-service.blueapron.com/render/q/quality/75/src/https%3A%2F%2Fmedia.blueapron.com%2Fhome_page%2FSocialCarousel%2FBASocialImage6.jpg">
+                <img alt="Instagram Picture from moosethebulldogsf" src="{{asset('/images/home/BASocialImage6.jpg')}}">
               </div>
               <div class="slide--details">
                 <div class="slide--details--header">
-                  <img alt="Instagram Avatar for moosethebulldogsf" src="https://image-service.blueapron.com/render/q/quality/75/src/https%3A%2F%2Fmedia.blueapron.com%2Fhome_page%2FSocialCarousel%2FBASocialImage6_User.jpg">
+                  <img alt="Instagram Avatar for moosethebulldogsf" src="{{asset('/images/home/BASocialImage6_User.jpg')}}">
                   <span>moosethebulldogsf</span>
                 </div>
                 <div class="slide--details--body">
@@ -89,11 +89,11 @@
               </div>
             </div></div><div class="owl-item" style="width: 750px;"><div class="slide">
               <div class="slide--photo">
-                <img alt="Instagram Picture from freedomgracenfitness" src="https://image-service.blueapron.com/render/q/quality/75/src/https%3A%2F%2Fmedia.blueapron.com%2Fhome_page%2FSocialCarousel%2FBASocialImage7.jpg">
+                <img alt="Instagram Picture from freedomgracenfitness" src="{{asset('/images/home/BASocialImage7.jpg')}}">
               </div>
               <div class="slide--details">
                 <div class="slide--details--header">
-                  <img alt="Instagram Avatar for freedomgracenfitness" src="https://image-service.blueapron.com/render/q/quality/75/src/https%3A%2F%2Fmedia.blueapron.com%2Fhome_page%2FSocialCarousel%2FBASocialImage7_User.jpg">
+                  <img alt="Instagram Avatar for freedomgracenfitness" src="{{asset('/images/home/BASocialImage7_User.jpg')}}">
                   <span>freedomgracenfitness</span>
                 </div>
                 <div class="slide--details--body">
@@ -102,11 +102,11 @@
               </div>
             </div></div><div class="owl-item" style="width: 750px;"><div class="slide">
               <div class="slide--photo">
-                <img alt="Instagram Picture from jerisherley" src="https://image-service.blueapron.com/render/q/quality/75/src/https%3A%2F%2Fmedia.blueapron.com%2Fhome_page%2FSocialCarousel%2FBASocialImage8.jpg">
+                <img alt="Instagram Picture from jerisherley" src="{{asset('/images/home/BASocialImage8.jpg')}}">
               </div>
               <div class="slide--details">
                 <div class="slide--details--header">
-                  <img alt="Instagram Avatar for jerisherley" src="https://image-service.blueapron.com/render/q/quality/75/src/https%3A%2F%2Fmedia.blueapron.com%2Fhome_page%2FSocialCarousel%2FBASocialImage8_User.jpg">
+                  <img alt="Instagram Avatar for jerisherley" src="{{asset('/images/home/BASocialImage8_User.jpg')}}">
                   <span>jerisherley</span>
                 </div>
                 <div class="slide--details--body">
@@ -115,11 +115,11 @@
               </div>
             </div></div><div class="owl-item" style="width: 750px;"><div class="slide">
               <div class="slide--photo">
-                <img alt="Instagram Picture from jeffbowlin" src="https://image-service.blueapron.com/render/q/quality/75/src/https%3A%2F%2Fmedia.blueapron.com%2Fhome_page%2FSocialCarousel%2FBASocialImage9.jpg">
+                <img alt="Instagram Picture from jeffbowlin" src="{{asset('/images/home/BASocialImage9.jpg')}}">
               </div>
               <div class="slide--details">
                 <div class="slide--details--header">
-                  <img alt="Instagram Avatar for jeffbowlin" src="https://image-service.blueapron.com/render/q/quality/75/src/https%3A%2F%2Fmedia.blueapron.com%2Fhome_page%2FSocialCarousel%2FBASocialImage9_User.jpg">
+                  <img alt="Instagram Avatar for jeffbowlin" src="{{asset('/images/home/BASocialImage9_User.jpg')}}">
                   <span>jeffbowlin</span>
                 </div>
                 <div class="slide--details--body">
@@ -128,11 +128,11 @@
               </div>
             </div></div><div class="owl-item" style="width: 750px;"><div class="slide">
               <div class="slide--photo">
-                <img alt="Instagram Picture from bodybumpfitness" src="https://image-service.blueapron.com/render/q/quality/75/src/https%3A%2F%2Fmedia.blueapron.com%2Fhome_page%2FSocialCarousel%2FBASocialImage10.jpg">
+                <img alt="Instagram Picture from bodybumpfitness" src="{{asset('/images/home/BASocialImage10.jpg')}}">
               </div>
               <div class="slide--details">
                 <div class="slide--details--header">
-                  <img alt="Instagram Avatar for bodybumpfitness" src="https://image-service.blueapron.com/render/q/quality/75/src/https%3A%2F%2Fmedia.blueapron.com%2Fhome_page%2FSocialCarousel%2FBASocialImage10_User.jpg">
+                  <img alt="Instagram Avatar for bodybumpfitness" src="{{asset('/images/home/BASocialImage9_User.jpg')}}">
                   <span>bodybumpfitness</span>
                 </div>
                 <div class="slide--details--body">
