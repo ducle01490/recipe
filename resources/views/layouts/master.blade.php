@@ -29,8 +29,10 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{ asset("/images/favicon.png?v=1") }}" />
 
-    <link rel="stylesheet" href="{{ asset('/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('/css/responsive.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/font-awesome/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ mix('css/style.min.css') }}">
+    <link rel="stylesheet" href="{{ mix('css/responsive.min.css') }}">
     <!-- Stylesheets Core Library-->
     <!-- <link href="https://fonts.googleapis.com/css?family=Itim" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Quicksand" rel="stylesheet">
