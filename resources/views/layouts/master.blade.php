@@ -32,7 +32,8 @@
     <link rel="stylesheet" href="{{ asset("/style.css") }}">
     <link rel="stylesheet" href="{{ asset("/css/responsive.css") }}">
     <!-- Stylesheets Core Library-->
-    <link href="https://fonts.googleapis.com/css?family=Itim" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Itim" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Quicksand" rel="stylesheet">
 
     <!-- Google Analytics -->
     <script>
