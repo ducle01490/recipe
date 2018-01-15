@@ -114,48 +114,4 @@
 </div>
 
 
-<div class="modal fade" id="modalOrder" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Đặt hàng</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="row clearfix">
-            <div class="col-sm-4">
-                <img src="images/recipe/02.jpg" alt="" class="img-responsive">
-            </div>
-            <div class="col-sm-8">
-                <h3 style="font-size: 20px;text-align: left">Hải sản cao cấp</h3>
-                <h5 style="font-size: 18px;" class="text-warning">298,000đ</h5>
-            </div>
-        </div>
-        <hr>
-        <form>
-          <div class="form-group">
-            <label for="recipient-name" class="col-form-label">Tên của bạn là gì:</label>
-            <input type="text" class="form-control" id="recipient-name">
-          </div>
-          <div class="form-group">
-            <label for="recipient-name" class="col-form-label">Số điện thoại của bạn:</label>
-            <input type="text" class="form-control" id="recipient-name">
-          </div>
-          <div class="form-group">
-            <label for="message-text" class="col-form-label">Giao hàng đến:</label>
-            <textarea class="form-control" id="message-text"></textarea>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
-        <button type="button" class="btn btn-primary">Đặt mua</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
 @endsection
