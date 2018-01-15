@@ -26,9 +26,6 @@
         return jQuery("html,body").animate({
             scrollTop: 0
         }, 500), !1
-    }), jQuery(".sticky-sidebar").theiaStickySidebar({
-        additionalMarginTop: 100,
-        additionalMarginBottom: 25
     }), jQuery(".tp-banner").length && jQuery(".tp-banner").revolution({
         delay: 5e3,
         startwidth: 1170,
@@ -45,14 +42,6 @@
         fullScreen: "off"
     }), jQuery(".remove-recipe-col").on("click", function() {
         return jQuery(this).parent().remove(), !1
-    }), e("#range_slider").ionRangeSlider({
-        type: "double",
-        grid: !0,
-        min: 1,
-        max: 1e3,
-        from: 250,
-        to: 600,
-        prefix: "$"
     }), jQuery(function() {
         var e = jQuery("#check-also-box");
         if (e.length > 0) {
@@ -76,5 +65,5 @@
                 t = jQuery(window).scrollTop();
             t > s && (i = 100 * (t - s) / (e - o)), jQuery("#reading-position-indicator").css("width", i + "%")
         })
-    }), jQuery("head").append("<script src='/js/switcher.js'><\/script>")
+    }), jQuery("head").append("<script src='/js/switcher.min.js'><\/script>")
 }(jQuery);

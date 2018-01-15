@@ -87,22 +87,14 @@
 
     <div class="go-up"><i class="fa fa-chevron-up"></i></div>
 
-    <script
-  src="https://code.jquery.com/jquery-2.2.4.min.js"
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous"></script>
+
     <script src="{{ asset("/js/bootstrap.min.js") }}"></script>
-    <script src="{{ asset("/js/jquery-ui-1.10.3.custom.min.js") }}"></script>
-    <script src="{{ asset("/js/jquery.easing.1.3.min.js") }}"></script>
     <script src="{{ asset("/js/jquery.nicescroll.min.js") }}"></script>
-    <script src="{{ asset("/js/jquery.scrollTo.js") }}"></script>
-    <script src="{{ asset("/js/ResizeSensor.min.js") }}"></script>
-    <script src="{{ asset("/js/theia-sticky-sidebar.min.js") }}"></script>
-    <script src="{{ asset("/js/parallax.min.js") }}"></script>
     <script src="{{ asset("/js/jquery.themepunch.plugins.min.js") }}"></script>
     <script src="{{ asset("/js/jquery.themepunch.revolution.min.js") }}"></script>
-    <script src="{{ asset("/js/ion.rangeSlider.min.js") }}"></script>
-    <script src="{{ asset("/js/imagesloaded.pkgd.min.js") }}"></script>
     <script src="{{ asset("/js/custom.js") }}"></script>
 
     @yield('script')
