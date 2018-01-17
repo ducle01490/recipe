@@ -576,8 +576,8 @@
         height: 20px
     }
     #close_in i {
-        color: #000!important;
-        font-size: 24px
+        /*color: #000!important;
+        font-size: 24px*/
     }
     header .main-menu.show>ul>li>a>i {
         display: block
@@ -777,5 +777,9 @@
     }
     #review-box .user-rate-wrap .user-rating-text {
         float: none
+    }
+    .row-new-recipe .col-md-3.col-sm-6.col-xs-6 {
+        padding-right: 5px;
+        padding-left: 5px;
     }
 }

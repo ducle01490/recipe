@@ -26,6 +26,8 @@
                 </div>
             </div>
             @endforeach
+        </div>
+        <div class="row">
             <div class="col-md-12">
                 <div class="text-center">
                     {{ $recipes->links() }}

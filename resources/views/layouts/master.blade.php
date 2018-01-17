@@ -34,8 +34,8 @@
     <link rel="stylesheet" href="{{ asset('/css/loaded.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/font-awesome/css/font-awesome.min.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/settings.css') }}">
-    <link rel="stylesheet" href="{{ mix('css/style.min.css') }}">
-    <link rel="stylesheet" href="{{ mix('css/responsive.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/responsive.css') }}">
     <!-- Stylesheets Core Library-->
     <!-- <link href="https://fonts.googleapis.com/css?family=Itim" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Quicksand" rel="stylesheet">
@@ -95,7 +95,7 @@
     <script src="{{ asset("/js/jquery.nicescroll.min.js") }}"></script>
     <script src="{{ asset("/js/jquery.themepunch.plugins.min.js") }}"></script>
     <script src="{{ asset("/js/jquery.themepunch.revolution.min.js") }}"></script>
-    <script src="{{ asset("/js/custom.min.js") }}"></script>
+    <script src="{{ asset("/js/custom.js") }}"></script>
 
     @yield('script')
     

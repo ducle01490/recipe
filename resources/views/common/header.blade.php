@@ -12,7 +12,7 @@
                     <div id="header_menu">
                         <img src="{{ asset("images/logo-menu.png") }}" alt="">
                     </div>
-                    <a href="#" class="open_close" id="close_in"><i class="icon_close"></i></a>
+                    <a href="#" class="open_close" id="close_in"><i class="fa fa-times fa-2x" aria-hidden="true"></i></a>
                     <ul>
                         <li class="submenu">
                             <a href="{{ route('homepage') }}"><i class="icon_house_alt"></i> Trang chủ</a>
