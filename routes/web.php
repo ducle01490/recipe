@@ -19,8 +19,12 @@ Route::get('/', array('as' => 'homepage', function () {
 Route::group(['prefix' => 'recipes'], function () {
 	// Lay danh sach recipes
 	Route::get('/', array('as' => 'recipes', 'uses' => 'RecipeController@index'));
-	Route::get('/detail/{recipe_id}', array('as' => 'recipe_detail', 'uses' => 'RecipeController@detail'));
+	
 });
+
+Route::get('/recipe/{recipe_id}', array('as' => 'recipe_detail', 'uses' => 'RecipeController@recipe'));
+
+Route::get('/compilation/{compilation_id}', array('as' => 'compilation_detail', 'uses' => 'RecipeController@compilation'));
 
 
 Route::group(['prefix' => 'orders'], function () {

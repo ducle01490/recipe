@@ -100,6 +100,7 @@
         @endif
     </div>
 
+    @if(count($sevenMenus) > 0)
     <div class="text-red">
         <h5>THỰC ĐƠN CÁC NGÀY GẦN ĐÂY</h5>
     </div>
@@ -127,6 +128,7 @@
         </div>
         @endforeach
     </div><!-- End row -->
+    @endif
 </div>
 
 
