@@ -30,9 +30,9 @@
     <link rel="shortcut icon" href="{{ asset("/images/favicon.png?v=1") }}" />
 
     <link rel="stylesheet" href="{{ asset('/css/base.css') }}">
-    <link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ asset('/css/loaded.css') }}">
-    <link rel="stylesheet" href="{{ asset('/css/font-awesome/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ asset('/css/settings.css') }}">
     <link rel="stylesheet" href="{{ asset('/style.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/responsive.css') }}">
@@ -91,10 +91,9 @@
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous"></script>
 
-    <script src="{{ asset("/js/bootstrap.min.js") }}"></script>
-    <script src="{{ asset("/js/jquery.nicescroll.min.js") }}"></script>
-    <script src="{{ asset("/js/jquery.themepunch.plugins.min.js") }}"></script>
-    <script src="{{ asset("/js/jquery.themepunch.revolution.min.js") }}"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
+    
     <script src="{{ asset("/js/custom.js") }}"></script>
 
     @yield('script')

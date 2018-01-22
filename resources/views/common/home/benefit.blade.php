@@ -7,31 +7,31 @@
         <div class="value-prop-header">
           <div class="col-xs-12">
             <h2>
-              When you cook with Blue Apron,
+              Đồng hành cùng chúng tôi,
             </h2>
           </div>
           <div class="col-xs-12">
             <h2>
-              you're building a better food system
+              để xây dựng một hệ thống thực phẩm tốt hơn
             </h2>
           </div>
         </div>
         <ul class="col-xs-12">
           <li class="col-md-3">
-            <p>Creating</p><p>Better Standards</p>
+            <p>Nâng Cao</p><p>Tiêu Chuẩn Thực Phẩm</p>
           </li>
           <li class="col-md-3">
-            <p>Regenerating</p><p>Our Land</p>
+            <p>Tiết Kiệm</p><p>Thời Gian Nấu Nướng</p>
           </li>
           <li class="col-md-3">
-            <p>Eliminating</p><p>The Middleman</p>
+            <p>Cắt Giảm</p><p>Phí Trung Gian</p>
           </li>
           <li class="col-md-3">
-            <p>Reducing</p><p>Food Waste</p>
+            <p>Hạn Chế</p><p>Lãng Phí Thực Phẩm</p>
           </li>
         </ul>
 
-        <a href="{{route('menu')}}" id="discover-mission-btn" class="btn" name="button">Discover How</a>
+        <a href="{{route('menu')}}" id="discover-mission-btn" class="btn" name="button">Về chúng tôi</a>
       </div>
       <div class="col-xs-1 small-only benefits--buffer">
       </div>

@@ -3,9 +3,9 @@
     <div class="row">
       <div>
         <h2 class="section-title">
-          Our Community of Home Chefs
+          Cộng đồng những đầu bếp gia đình
         </h2>
-        <h5 class="section-title--sub-header">Over a million and counting...</h5>
+        <h5 class="section-title--sub-header">Tham gia và chia sẻ niềm vui nấu nướng</h5>
       </div>
       <div class="instagram-widget--body">
         <div class="slide-container owl-carousel our-mission">
@@ -24,7 +24,7 @@
                       <span>Kristine Gordon</span>
                     </div>
                     <div class="slide--details--body">
-                      Thank you @kirstin1031 @kirstinskrafts for your #BlueApron gift! It's so fun following new recipes! 😋 #JuicyLucyBurger
+                      Thank you @kirstin1031 @kirstinskrafts for your gift! It's so fun following new recipes! 😋 #JuicyLucyBurger
                     </div>
                   </div>
                 </div>
@@ -41,7 +41,7 @@
                       <span>crystalbgarcia</span>
                     </div>
                     <div class="slide--details--body">
-                      Welcome home dinner! #blueapron thank you!
+                      Welcome home dinner!
                     </div>
                   </div>
                 </div>
@@ -57,7 +57,7 @@
                     <span>jakethelittlelion</span>
                   </div>
                   <div class="slide--details--body">
-                    Dap on the BBQ sauce because I am ready to eat my savory burger!! #blueapron
+                    Dap on the BBQ sauce because I am ready to eat my savory burger!!
                   </div>
                 </div>
               </div></div>
@@ -73,7 +73,7 @@
                       <span>tfletchet</span>
                     </div>
                     <div class="slide--details--body">
-                      Blue Apron cook-off
+                      cook-off
                     </div>
                   </div>
                 </div>
@@ -90,7 +90,7 @@
                       <span>michaelmclark</span>
                     </div>
                     <div class="slide--details--body">
-                      Beef and summer corn enchiladas. #familydinner #lotsofsouschefs #blueapron 😎
+                      Beef and summer corn enchiladas. #familydinner #lotsofsouschefs 😎
                     </div>
                   </div>
                 </div>
@@ -107,7 +107,7 @@
                       <span>moosethebulldogsf</span>
                     </div>
                     <div class="slide--details--body">
-                      Thanks for all the fun @blueapron! 🐶👶🏻
+                      Thanks for all the fun! 🐶👶🏻
                     </div>
                   </div>
                 </div>
@@ -124,7 +124,7 @@
                       <span>freedomgracenfitness</span>
                     </div>
                     <div class="slide--details--body">
-                      First meal I've made since our summer at camp! 😋 Feels good to be back in the kitchen again! Loved makin this meal with my sweet mama in law! She introduced me to @blueapron! Anyone else a fan? What's your experience been?
+                      First meal I've made since our summer at camp! 😋 Feels good to be back in the kitchen again! Loved makin this meal with my sweet mama in law! Anyone else a fan? What's your experience been?
                     </div>
                   </div>
                 </div>
@@ -141,7 +141,7 @@
                       <span>jerisherley</span>
                     </div>
                     <div class="slide--details--body">
-                      Whisking! @blueapron #bacookingcamp
+                      Whisking! #bacookingcamp
                     </div>
                   </div>
                 </div>
@@ -158,7 +158,7 @@
                       <span>jeffbowlin</span>
                     </div>
                     <div class="slide--details--body">
-                      Dinner on the porch with Baeb #jlmakan3 #blueapron
+                      Dinner on the porch with Baeb #jlmakan3
                     </div>
                   </div>
                 </div>
@@ -175,7 +175,7 @@
                       <span>bodybumpfitness</span>
                     </div>
                     <div class="slide--details--body">
-                      Life happens in the kitchen!! I 💙 cooking with my crew!@blueapron makes family meal time a collaborative effort that is both simple and seamless! Tonight's tasty menu: Hoisin Beef &amp; Vegetable Stir-Fry! #familytime#healthyliving #healthychoices
+                      Life happens in the kitchen!! I 💙 cooking with my crew! makes family meal time a collaborative effort that is both simple and seamless! Tonight's tasty menu: Hoisin Beef &amp; Vegetable Stir-Fry! #familytime#healthyliving #healthychoices
                     </div>
                   </div>
                 </div>

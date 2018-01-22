@@ -9,7 +9,7 @@
         <div class="content">
           <div class="content--header">
             <h5 class="section-title">
-              What's Inside Your Delivery
+              Hộp Xanh nguyên liệu có
             </h5>
           </div>
           <ul class="content--list">
@@ -21,7 +21,7 @@
 
               </div>
               <div class="checklist-item--description">
-                Farm-fresh, seasonal produce
+                Rau củ, quả tươi và ngon
               </div>
             </li>
             <li class="checklist-item">
@@ -32,7 +32,7 @@
 
               </div>
               <div class="checklist-item--description">
-                Meat with no added hormones
+                Thịt sạch có truy xuất nguồn gốc
               </div>
             </li>
             <li class="checklist-item">
@@ -43,7 +43,7 @@
 
               </div>
               <div class="checklist-item--description">
-                Sustainably-sourced seafood
+                Gia vị, phụ gia àn toàn
               </div>
             </li>
             <li class="checklist-item">
@@ -54,81 +54,31 @@
 
               </div>
               <div class="checklist-item--description">
-                ...and everything else you need!
+                ...và mọi thứ bạn cần!
               </div>
             </li>
           </ul>
 
-          <ul class="content--list-june-touchup js-homepageTouchup">
-            <li class="checklist-item">
-              <div class="checklist-item--check">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="-1 -1 18 14">
-    <path class="path" stroke="#3ac25b " stroke-dasharray="300" stroke-dashoffset="300" stroke-width="3" fill="none" d="M.797 6.61l4.252 4.252 9.93-9.93" style="stroke-dasharray: 20.0564px; stroke-dashoffset: 0px; transform: matrix(1.2, 0, 0, 1.2, 0, 0);"></path>
-</svg>
-
-              </div>
-              <div class="checklist-item--description">
-                Fresh, seasonal and pre-portioned ingredients
-              </div>
-            </li>
-            <li class="checklist-item">
-              <div class="checklist-item--check">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="-1 -1 18 14">
-    <path class="path" stroke="#3ac25b " stroke-dasharray="300" stroke-dashoffset="300" stroke-width="3" fill="none" d="M.797 6.61l4.252 4.252 9.93-9.93" style="stroke-dasharray: 20.0564px; stroke-dashoffset: 0px; transform: matrix(1.2, 0, 0, 1.2, 0, 0);"></path>
-</svg>
-
-              </div>
-              <div class="checklist-item--description">
-                Premium meats and sustainable seafood
-              </div>
-            </li>
-            <li class="checklist-item">
-              <div class="checklist-item--check">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="-1 -1 18 14">
-    <path class="path" stroke="#3ac25b " stroke-dasharray="300" stroke-dashoffset="300" stroke-width="3" fill="none" d="M.797 6.61l4.252 4.252 9.93-9.93" style="stroke-dasharray: 20.0564px; stroke-dashoffset: 0px; transform: matrix(1.2, 0, 0, 1.2, 0, 0);"></path>
-</svg>
-
-              </div>
-              <div class="checklist-item--description">
-                Balanced meals from 600-800 calories
-              </div>
-            </li>
-            <li class="checklist-item">
-              <div class="checklist-item--check">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="-1 -1 18 14">
-    <path class="path" stroke="#3ac25b " stroke-dasharray="300" stroke-dashoffset="300" stroke-width="3" fill="none" d="M.797 6.61l4.252 4.252 9.93-9.93" style="stroke-dasharray: 20.0564px; stroke-dashoffset: 0px; transform: matrix(1.2, 0, 0, 1.2, 0, 0);"></path>
-</svg>
-
-              </div>
-              <div class="checklist-item--description">
-                Recipe cards with step-by-step instructions
-              </div>
-            </li>
-          </ul>
-
-          <div class="content--additional legacy hide">
-            Plus, recipe cards, how-to videos and the story behind our ingredients.
-          </div>
           <div class="content--additional refresh">
           </div>
           <div class="content--details">
             <div class="pricing">
               <div class="pricing--content">
                 <div class="pricing--header">
-                  Starting at
+                  Đang ưu đãi
                 </div>
                 <div class="pricing--cost">
-                  $8.99
+                  100%
                 </div>
                 <div class="pricing--cost-subheader">
-                  / serving
+                  miễn phí vận chuyển
                 </div>
                 <img class="legacy hide" src="{{asset('/images/home/freedelivery.svg')}}" alt="healthy fresh ingredients free delivery stamp">
               </div>
-              <a class="btn" name="button" id="choose-plan-btn" href="/users/sign_up">Choose Your Plan</a>
+              <a class="btn" name="button" id="choose-plan-btn" href="/users/sign_up">Xem chi tiết</a>
             </div>
             <div class="content--details--footer">
-              No commitment. Skip or cancel anytime.
+              Không cần đăng nhập, đặt hàng trước 24h
             </div>
           </div>
         </div>
