@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('header')
-
+  <link rel="stylesheet" href="{{ asset('/css/settings.css') }}">
   <link rel="stylesheet" href="{{ asset('/blueapron.css') }}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
