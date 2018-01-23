@@ -2,16 +2,6 @@
     "use strict";
     jQuery(window).load(function() {
         jQuery("body").addClass("loaded")
-    }), jQuery("html").niceScroll({
-        scrollspeed: 60,
-        mousescrollstep: 38,
-        cursorwidth: 6,
-        cursorborder: 0,
-        cursorcolor: "#6c6c6c",
-        autohidemode: !1,
-        zindex: 9999999,
-        horizrailenabled: !1,
-        cursorborderradius: 0
     }), jQuery("a.open_close").on("click", function() {
         jQuery("#main-menu").toggleClass("show"), jQuery(".layer").toggleClass("layer-is-visible")
     }), jQuery("a.show-submenu").on("click", function() {
