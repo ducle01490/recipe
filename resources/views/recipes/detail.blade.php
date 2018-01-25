@@ -1,10 +1,13 @@
 @extends('layouts.master')
 
 @section('header')
-@if(strpos($recipe->video, 'youtube') !== false)
-<script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
-@else
-<script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+
+@if($recipe->video)
+    @if(strpos($recipe->video, 'youtube') !== false)
+    <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+    @else
+    <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+    @endif
 @endif
 <script async src="https://cdn.ampproject.org/v0.js"></script>
 @endsection
@@ -151,40 +154,50 @@
     </div>
     <div class="row recipe_detail">
         <div class="col-lg-5 col-md-5 col-sm-12 video-player-detail">
-            <div class="video-player">
-                @if(strpos($recipe->video, 'youtube') !== false)
-                <?php 
-                preg_match("/^(?:http(?:s)?:\/\/)?(?:www\.)?(?:m\.)?(?:youtu\.be\/|youtube\.com\/(?:(?:watch)?\?(?:.*&)?v(?:i)?=|(?:embed|v|vi|user)\/))([^\?&\"'>]+)/", $recipe->video, $matches);
-                $videoId = $matches[1];
-                ?>
+            @if($recipe->video)
+                <div class="video-player">
+                    @if(strpos($recipe->video, 'youtube') !== false)
+                    <?php 
+                    preg_match("/^(?:http(?:s)?:\/\/)?(?:www\.)?(?:m\.)?(?:youtu\.be\/|youtube\.com\/(?:(?:watch)?\?(?:.*&)?v(?:i)?=|(?:embed|v|vi|user)\/))([^\?&\"'>]+)/", $recipe->video, $matches);
+                    $videoId = $matches[1];
+                    ?>
 
-              <amp-youtube id="myVideo" width="480" height="270"
-                           layout="responsive"
-                           data-videoid="{{$videoId}}"
-                           autoplay>
-                </amp-youtube>
-                @else
-                <amp-video id="myVideo" controls
-              width="1" height="1" layout="responsive"
-              src="{{$recipe->video}}">
-                </amp-video>
-                  
-                @endif
+                  <amp-youtube id="myVideo" width="480" height="270"
+                               layout="responsive"
+                               data-videoid="{{$videoId}}"
+                               autoplay>
+                    </amp-youtube>
+                    @else
+                    <amp-video id="myVideo" controls
+                  width="1" height="1" layout="responsive"
+                  src="{{$recipe->video}}">
+                    </amp-video>
+                      
+                    @endif
 
-              <div id="myOverlay" class="click-to-play-overlay">
+                  <div id="myOverlay" class="click-to-play-overlay">
 
-                <div class="play-icon"
-                role="button" tabindex="0"
-                on="tap:myOverlay.hide, myVideo.play">
+                    <div class="play-icon"
+                    role="button" tabindex="0"
+                    on="tap:myOverlay.hide, myVideo.play">
+                    </div>
+
+                        <amp-img class="poster-image"
+                        layout="fill"
+                        src="{{$recipe->thumb}}">
+                    </amp-img>
+                    </div>
+
                 </div>
-
-                    <amp-img class="poster-image"
-                    layout="fill"
-                    src="{{$recipe->thumb}}">
-                </amp-img>
+            @else
+                <div class="photo">
+                    <amp-img src="{{$recipe->thumb}}"
+                          width="100"
+                          height="100"
+                          layout="responsive"
+                          alt="{{$recipe->title}}"></amp-img>
                 </div>
-
-            </div>
+            @endif
         </div>
         <div class="col-lg-7 col-md-7 col-sm-12">
             <div class="row">

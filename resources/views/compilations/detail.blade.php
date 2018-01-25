@@ -131,8 +131,6 @@
 
 </style>
 
-<script async src="https://cdn.ampproject.org/v0.js"></script>
-
 <div class="container margin_60">
     <div class="row row-tomorow">
         <div class="col-md-7 col-sm-6 col-xs-12">
