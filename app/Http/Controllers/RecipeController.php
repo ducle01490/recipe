@@ -64,7 +64,12 @@ class RecipeController extends Controller
         $siteDescription = 'Click để xem các món ăn hấp dẫn!';
         $siteImage = $recipe->thumb;
 
-        return view('recipes.detail', compact('recipe', 'siteTitle', 'siteDescription', 'siteImage'));
+        if ($recipe->compilationId) {
+            $compilation = Compilation::find($recipe->compilationId);
+            return view('recipes.detail', compact('recipe', 'siteTitle', 'siteDescription', 'siteImage', 'compilation'));
+        } else {
+            return view('recipes.detail', compact('recipe', 'siteTitle', 'siteDescription', 'siteImage'));
+        }
     }
 
 

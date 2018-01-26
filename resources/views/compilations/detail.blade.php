@@ -117,7 +117,7 @@
 
 .row-tomorow .plan_title {
     padding: 10px;
-    background: #fe0;
+    font-weight: 800;
 }
 
 .recipe-order-title .plan_time {
@@ -194,15 +194,15 @@
 
     @if(count($recipes) > 0)
     <div class="text-red">
-        <h5>CÁC MÓN ĂN TRONG VIDEO NÀY</h5>
+        <h5>CÁC MÓN ĂN TRONG NHÓM NÀY</h5>
     </div>
     <div class="row plan_dish">
         @foreach($recipes as $recipe)
         <div class="col-md-3 col-sm-6 col-xs-6 menu-col-item">
-            <div class="menu-item text-left">
+            <div>
                 <?php $detailUrl = Helper::toURI($recipe->title.'-'.$recipe->id, '-'); ?>
                 <a href="{{ route("recipe_detail", $detailUrl) }}">
-                    <div class="menu-img">
+                    <div class="menu-img" style="border-radius:3px;">
                         <amp-img src="{{$recipe->thumb}}"
                               width="100"
                               height="100"
@@ -210,7 +210,7 @@
                               alt="{{$recipe->title}}"></amp-img>
                     </div>
                 </a>
-                <div class="menu-content">
+                <div class="menu-content" style="padding: 0px 0px 10px 0px;">
                     <h3 class="menu-title"><a href="{{ route("recipe_detail", $detailUrl) }}">{{$recipe->title}}</a></h3>
                 </div>
             </div>

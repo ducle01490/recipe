@@ -140,6 +140,10 @@
         <div class="col-md-12">
             <div class="single-product" style="margin-bottom: 0px;">
                 <h1 class="product-title">{{$recipe->title}}</h1>
+                @if(isset($compilation) && !empty($compilation))
+                <?php $detailUrl = Helper::toURI($compilation->title.'-'.$compilation->id, '-'); ?>
+                <h3 class="text-center">Thực đơn này làm trong nhóm: <a style="color: #18c1ee;" href="{{route("compilation_detail", $detailUrl)}}">{{$compilation->title}}<span class="small" style="color: #18c1ee;"> ▶</span>︎</a></h3>
+                @endif
                 <div class="product-share">
                         <ul>
                             <li>
