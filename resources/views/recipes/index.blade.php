@@ -6,7 +6,7 @@
 
 <div class="white_bg">
     <div class="container margin_60">
-        <div class="row-new-recipe">
+        <div class="row flexthis row-new-recipe">
             @foreach($recipes as $recipe)
             <?php $detailUrl = Helper::toURI($recipe->title.'-'.$recipe->id, '-'); ?>
             <div class="col-md-3 col-sm-6 col-xs-6">

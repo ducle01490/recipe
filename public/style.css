@@ -1056,14 +1056,19 @@ header .main-menu .menu-wrapper li a i {
 
 /*.col-new-recipe END*/
 
+.flexthis.container:before,
+.flexthis.container:after,
+.flexthis.row:before,
+.flexthis.row:after {
+   content: normal; // IE doesn't support `initial`
+}
+
 .row-new-recipe {
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display:         flex;
 	flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
 }
 
 

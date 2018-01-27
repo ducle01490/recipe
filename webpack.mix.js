@@ -27,7 +27,6 @@ mix.styles([
 ], 'public/css/blueapron.min.css')
 
 mix.js('public/js/custom.js', 'public/js/custom.min.js')
-mix.js('public/js/switcher.js', 'public/js/switcher.min.js')
 
 if (mix.inProduction()) {
     mix.version();

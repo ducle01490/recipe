@@ -196,7 +196,7 @@
     <div class="text-red">
         <h5>CÁC MÓN ĂN TRONG NHÓM NÀY</h5>
     </div>
-    <div class="row plan_dish">
+    <div class="row flexthis plan_dish">
         @foreach($recipes as $recipe)
         <div class="col-md-3 col-sm-6 col-xs-6 menu-col-item">
             <div>
