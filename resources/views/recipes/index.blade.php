@@ -45,7 +45,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="text-center">
-                    {{ $paginator->links() }}
+                    {!! $paginator->links() !!}
                 </div>
             </div>
         </div>

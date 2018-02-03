@@ -39,7 +39,7 @@ class RecipeController extends Controller
         $page = $request->get('page')?:1;
         $paginator = new Paginator();
 
-        $recipes = $paginator->setQuery($recipe)->setCurrentPage($page)->setPerPage(15)->getData();
+        $recipes = $paginator->setQuery($recipe)->setCurrentPage($page)->setPerPage(12)->getData();
 
 
         return view('recipes.index', compact('recipes', 'paginator'));
