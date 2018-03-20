@@ -84,5 +84,8 @@
         </div>
       </div>
     </div>
+
+    @include('common.home.nextweek')
+
   </div>
 </section>

@@ -9,6 +9,42 @@
 @import url(css/settings.css);
 @import url(css/ion.rangeslider/css/ion.rangeSlider.css);
 @import url(css/ion.rangeslider/css/ion.rangeSlider.skinNice.css);*/
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url(/fonts/ProximaNova-Reg-webfont.5d5b6593c3948d364e163d9d1ab28b8b.woff2) format("woff2"), url(/static-assets/fonts/ProximaNova-Reg-webfont.4821b151c61817c43ae72d96e1b42c89.woff) format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url(/fonts/ProximaNova-Sbold-webfont.8a9dfe759711f1a008feda2150247947.woff2) format("woff2"), url(/static-assets/fonts/ProximaNova-Sbold-webfont.400d22583a92c5a44f91989e5b32e1ae.woff) format("woff");
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url(/fonts/ProximaNova-Xbold.7042087a2bbabf6eed2deb7cd5731cb3.woff) format("woff");
+    font-weight: 800;
+    font-style: normal
+}
+
+.bold {
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal
+}
+
+.extra-bold {
+    font-weight: 800
+}
+
+html {
+    font-family: "Proxima Nova", Arial, sans-serif
+}
+
 .main-menu a,
 header {
     -webkit-transition: all .3s;
@@ -48,7 +84,8 @@ body {
     color: #555;
     background-color: #fff;
     /*font-family: 'Itim', cursive;*/
-    font-family: 'Quicksand', 'Open Sans', sans-serif;
+    /*font-family: 'Quicksand', 'Open Sans', sans-serif;*/
+    font-family: "Proxima Nova", Open Sans, sans-serif
 }
 
 p {
@@ -3396,13 +3433,13 @@ ul.fonticons-list li i {
 .slide-a a {
     font-weight: 700;
     font-size: 15px;
-    color: #f8f5ec;
+    color: #fff;
     padding: 10px 40px;
-    -moz-border-radius: 20px;
-    -webkit-border-radius: 20px;
-    border-radius: 20px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
     display: inline-block;
-    background-color: #0F346C
+    background-color: #f26226
 }
 
 .slide-a.slide-a-2 a {
@@ -3415,7 +3452,7 @@ ul.fonticons-list li i {
 }
 
 .slideshow-bg {
-    background-color: rgba(65, 60, 53, .82);
+    background-color: rgba(65, 60, 53, 0.4);
     position: absolute;
     top: 0;
     height: 100%

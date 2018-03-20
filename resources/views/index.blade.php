@@ -11,7 +11,7 @@
 @section('content')
 	
   <!--SlideShow-->
-  @include('common.home.slideshow')
+  @include('common.home.newSlideshow')
   <!--END SlideShow-->
 
   
