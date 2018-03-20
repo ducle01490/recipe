@@ -56,7 +56,7 @@
 }(jQuery);
 
   $(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
+    $("#instagram").owlCarousel({
       nav : true, // Show next and prev buttons
       autoplay: true,
       navText:["",""],
@@ -69,6 +69,31 @@
       itemsDesktopSmall : false,
       itemsTablet: false,
       itemsMobile : false
+ 
+    });
+
+    $("#next-week").owlCarousel({
+      nav : true, // Show next and prev buttons
+      autoplay: true,
+      navText:["",""],
+      dots: false,
+      lazyLoad:true,
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:3
+          }
+      },
+      itemsDesktop : false,
+      itemsDesktopSmall : true,
+      itemsTablet: false,
+      itemsMobile : true,
+      margin:10,
+      loop: true
  
     });
   });
