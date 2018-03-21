@@ -15,7 +15,6 @@
   <!--END SlideShow-->
 
   
-
   @include('common.home.discover')
 
   @include('common.home.checklist')

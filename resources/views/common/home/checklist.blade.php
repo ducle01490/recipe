@@ -75,7 +75,7 @@
                 </div>
                 <img class="legacy hide" src="{{asset('/images/home/freedelivery.svg')}}" alt="healthy fresh ingredients free delivery stamp">
               </div>
-              <a class="btn" name="button" id="choose-plan-btn" href="/users/sign_up">Xem chi tiết</a>
+              <a class="btn" name="button" id="choose-plan-btn" href="#">Xem chi tiết</a>
             </div>
             <div class="content--details--footer">
               Không cần đăng nhập, đặt hàng trước 24h
