@@ -508,7 +508,7 @@
     }
     .pagination {
         margin: 27px auto;
-        width: 100%;
+        /*width: 100%;*/
         text-align: center
     }
     .chef-detail .chef-info .chef-media {

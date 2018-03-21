@@ -2,7 +2,7 @@
     		<div class="tp-banner-container">
     			<div class="tp-banner">
     				<ul>
-    					<li data-transition="random" data-slotamount="7" data-masterspeed="1500">
+    					<li data-transition="none" data-slotamount="7" data-masterspeed="1500">
     						<img src="images/content/sub_header.png" alt="" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
     						<div class="slideshow-bg"
     						data-y="310"
@@ -17,7 +17,7 @@
     							data-speed="500"
     							data-easing="Power3.easeInOut"
     							data-endspeed="300"
-    							style="z-index: 2"><h2>Khơi dậy hứng khởi vào bếp!</h2>
+    							style="z-index: 2;"><h2 style="font-weight: 700;">Khơi dậy hứng khởi vào bếp!</h2>
     						</div>
     						
     						<div class="slide-a tp-caption customin"

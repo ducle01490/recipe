@@ -44,13 +44,6 @@
         hideThumbs: 10,
         fullWidth: "off",
         fullScreen: "off"
-    }), jQuery(".tp-banner-2").length && jQuery(".tp-banner-2").revolution({
-        delay: 5e3,
-        startwidth: 1170,
-        startheight: 500,
-        hideThumbs: 10,
-        fullWidth: "off",
-        fullScreen: "off"
     });
 
 }(jQuery);
@@ -91,7 +84,7 @@
       itemsDesktop : false,
       itemsDesktopSmall : true,
       itemsTablet: false,
-      itemsMobile : true,
+      itemsMobile : false,
       margin:10,
       loop: true
  
