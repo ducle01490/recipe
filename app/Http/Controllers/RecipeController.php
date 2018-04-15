@@ -26,6 +26,25 @@ class RecipeController extends Controller
         // $this->middleware('auth');
     }
 
+
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function homepage(Request $request)
+    {
+
+        $keyCache = 'home_page_recipes';
+        $minutes = 1;
+        $recipes = Cache::remember($keyCache, $minutes, function () {
+            return Recipe::orderByRaw('RAND()')->where('status', 1)->take(12)->get();
+        });
+
+
+        return view('index', compact('recipes'));
+    }
+
     /**
      * Show the application dashboard.
      *

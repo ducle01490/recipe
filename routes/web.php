@@ -11,9 +11,11 @@
 |
 */
 
-Route::get('/', array('as' => 'homepage', function () {
-    return view('index');
-}));
+// Route::get('/', array('as' => 'homepage', function () {
+//     return view('index');
+// }));
+
+Route::get('/', array('as' => 'homepage', 'uses' => 'RecipeController@homepage'));
 
 
 Route::group(['prefix' => 'recipes'], function () {

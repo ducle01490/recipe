@@ -12,14 +12,14 @@
 
 @font-face {
     font-family: "Proxima Nova";
-    src: url(/fonts/ProximaNova-Reg-webfont.5d5b6593c3948d364e163d9d1ab28b8b.woff2) format("woff2"), url(/static-assets/fonts/ProximaNova-Reg-webfont.4821b151c61817c43ae72d96e1b42c89.woff) format("woff");
+    src: url(/fonts/ProximaNova-Reg-webfont.5d5b6593c3948d364e163d9d1ab28b8b.woff2) format("woff2"), url(/fonts/ProximaNova-Reg-webfont.4821b151c61817c43ae72d96e1b42c89.woff) format("woff");
     font-weight: 400;
     font-style: normal
 }
 
 @font-face {
     font-family: "Proxima Nova";
-    src: url(/fonts/ProximaNova-Sbold-webfont.8a9dfe759711f1a008feda2150247947.woff2) format("woff2"), url(/static-assets/fonts/ProximaNova-Sbold-webfont.400d22583a92c5a44f91989e5b32e1ae.woff) format("woff");
+    src: url(/fonts/ProximaNova-Sbold-webfont.8a9dfe759711f1a008feda2150247947.woff2) format("woff2"), url(/fonts/ProximaNova-Sbold-webfont.400d22583a92c5a44f91989e5b32e1ae.woff) format("woff");
     font-weight: 600;
     font-style: normal
 }
@@ -83,8 +83,6 @@ body {
     line-height: 1.4;
     color: #555;
     background-color: #fff;
-    /*font-family: 'Itim', cursive;*/
-    /*font-family: 'Quicksand', 'Open Sans', sans-serif;*/
     font-family: "Proxima Nova", Open Sans, sans-serif
 }
 
@@ -313,7 +311,7 @@ iframe {
 #header-top .select-style select {
     color: #0F346C;
     font-size: 12px;
-    font-family: Roboto, sans-serif;
+    /*font-family: Roboto, sans-serif;*/
     letter-spacing: .5px;
     padding: 4px 10px;
     width: 100%;
@@ -522,7 +520,7 @@ header .main-menu .menu-wrapper li a i {
     -moz-border-radius: 30px;
     -moz-box-shadow: 0 0 50px 0 rgba(0, 0, 0, .75);
     font-size: 16px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+/*    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
     font-weight: 600;
     color: #444;
     background: #fff
@@ -3424,7 +3422,7 @@ ul.fonticons-list li i {
 
 .slide-p p {
     font-size: 16px;
-    font-family: Imprima, Helvetica, Arial, sans-serif;
+    /*font-family: Imprima, Helvetica, Arial, sans-serif;*/
     color: #e6e3db;
     text-align: center;
     line-height: 25px
@@ -4725,6 +4723,13 @@ ul.footer-contact li {
 
 .plan_title a {
     color: #222;
+}
+
+.card-text {
+    font-weight: 400;
+    font-size: 13px;
+    margin: 8px;
+    color: #0F346C;
 }
 
 @media only screen and (max-width:400px){
