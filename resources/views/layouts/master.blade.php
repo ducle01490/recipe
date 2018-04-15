@@ -39,7 +39,7 @@
     </style>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ asset('/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('/css/responsive.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/responsive.css') }}?id=201804152226">
     <!-- Stylesheets Core Library-->
     <!-- <link href="https://fonts.googleapis.com/css?family=Itim" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Quicksand" rel="stylesheet">

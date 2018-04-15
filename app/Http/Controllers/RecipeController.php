@@ -63,7 +63,7 @@ class RecipeController extends Controller
 
         
         $paginator = new Paginator();
-        $paginator->setQuery($recipe)->setCurrentPage($page)->setPerPage(3);
+        $paginator->setQuery($recipe)->setCurrentPage($page)->setPerPage(20);
 
         $recipes = Cache::remember($keyCache, $minutes, function () use ($paginator) {
             return $paginator->getData();
