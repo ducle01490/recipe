@@ -194,7 +194,7 @@
 
     @if(count($recipes) > 0)
     <div class="text-red">
-        <h5>CÁC MÓN ĂN TRONG NHÓM NÀY</h5>
+        <h5>IN THIS VIDEO</h5>
     </div>
     <div class="row flexthis plan_dish">
         @foreach($recipes as $recipe)

@@ -2,8 +2,8 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
-        <h2 class="section-title">Bắt đầu nấu nướng với hộp xanh đầu tiên của bạn!</h2>
-        <a class="btn get-cooking-btn get-cooking-btn-bottom" name="button" href="{{route('menu')}}">Xem thực đơn</a>
+        <h2 class="section-title">Get dinner off your mind and onto your plate!</h2>
+        <a class="btn get-cooking-btn get-cooking-btn-bottom" name="button" href="{{route('menu')}}">Start Enjoying More</a>
       </div>
     </div>
   </div>

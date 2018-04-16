@@ -7,31 +7,26 @@
         <div class="value-prop-header">
           <div class="col-xs-12">
             <h2>
-              Đồng hành cùng chúng tôi,
-            </h2>
-          </div>
-          <div class="col-xs-12">
-            <h2>
-              để xây dựng một hệ thống thực phẩm tốt hơn
+              Start Loving Dinner in a Whole New Way
             </h2>
           </div>
         </div>
         <ul class="col-xs-12">
           <li class="col-md-3">
-            <p>Nâng Cao</p><p>Tiêu Chuẩn Thực Phẩm</p>
+            <p>Creating</p><p>Better Standards</p>
           </li>
           <li class="col-md-3">
-            <p>Tiết Kiệm</p><p>Thời Gian Nấu Nướng</p>
+            <p>Saving</p><p>Cooking Time</p>
           </li>
           <li class="col-md-3">
-            <p>Cắt Giảm</p><p>Phí Trung Gian</p>
+            <p>Eliminating</p><p>The Middleman</p>
           </li>
           <li class="col-md-3">
-            <p>Hạn Chế</p><p>Lãng Phí Thực Phẩm</p>
+            <p>Reducing</p><p>Food Waste</p>
           </li>
         </ul>
 
-        <a href="{{route('menu')}}" id="discover-mission-btn" class="btn" name="button">Về chúng tôi</a>
+        <a href="{{route('menu')}}" id="discover-mission-btn" class="btn" name="button">Start Having Fresh</a>
       </div>
       <div class="col-xs-1 small-only benefits--buffer">
       </div>

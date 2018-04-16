@@ -39,8 +39,8 @@
             <nav class="col-md-10 col-sm-8 col-xs-8">
                 <div class="main-menu-mobile hidden-md hidden-lg">
                     <ul>
-                        <li><a href="{{ route('menu') }}"><i class="ic icon-calendar-2"></i> Thực đơn</a></li>
-                        <li><a href="{{ route('recipes') }}"><i class="ic icon-recipes"></i> Công thức</a></li>
+                        <li><a href="{{ route('menu') }}"><i class="ic icon-calendar-2"></i> Menus</a></li>
+                        <li><a href="{{ route('recipes') }}"><i class="ic icon-recipes"></i> Recipes</a></li>
                     </ul>
                 </div>
 
@@ -52,10 +52,10 @@
                     <a href="#" class="open_close" id="close_in"><i class="fa fa-times fa-2x" aria-hidden="true"></i></a>
                     <ul>
                         <li class="submenu">
-                            <a href="{{ route('homepage') }}"><i class="icon_house_alt"></i> Trang chủ</a>
+                            <a href="{{ route('homepage') }}"><i class="icon_house_alt"></i> Homepage</a>
                         </li>
-                        <li><a href="{{ route('menu') }}"><i class="ic icon-calendar-2"></i> Thực đơn</a></li>
-                        <li><a href="{{ route('recipes') }}"><i class="ic icon-recipes"></i> Công thức</a></li>
+                        <li><a href="{{ route('menu') }}"><i class="ic icon-calendar-2"></i> Menus</a></li>
+                        <li><a href="{{ route('recipes') }}"><i class="ic icon-recipes"></i> Recipes</a></li>
                     </ul>
                 </div>
             </nav>

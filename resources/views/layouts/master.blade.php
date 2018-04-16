@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="author" content="Hộp xanh">
+    <meta name="author" content="Chefy">
     <!-- Chrome, Firefox OS, Opera and Vivaldi -->
     <meta name="theme-color" content="#ff514a">
     <!-- Windows Phone -->
@@ -21,11 +21,11 @@
     <meta name="description" content="{{ $siteDescription or 'Click để xem các món ăn hấp dẫn!' }}" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="{{url()->current()}}"/>
-    <meta property="og:title" content="{{ $siteTitle or 'Hộp Xanh' }}" />
+    <meta property="og:title" content="{{ $siteTitle or 'Chefy' }}" />
     <meta property="og:description" content="{{ $siteDescription or 'Click để xem các món ăn hấp dẫn!' }}" />
     <meta property="og:image" content="{{ $siteImage or 'https://laravel.com/cover.jpg'}}"/>
 
-    <title>{{ $siteTitle or 'Hộp Xanh' }}</title>
+    <title>{{ $siteTitle or 'Chefy' }}</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{ asset("/images/favicon.png?v=1") }}" />
 

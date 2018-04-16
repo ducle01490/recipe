@@ -1,5 +1,5 @@
 <div class="carousel-cont">
-	<h2 class="section-title refresh">Thực đơn hấp dẫn</h2>
+	<h2 class="section-title refresh">Cook Your Favorite Dinners from Our Daily Menu</h2>
 	<div class="owl-carousel" id="next-week">
 
 		@foreach($recipes as $recipe)
@@ -22,5 +22,5 @@
 		@endforeach
 		
 	</div>
-	<a id="get-cooking-btn" class="btn get-cooking-btn" name="button" href="{{ route('menu') }}">Xem thực đơn</a>
+	<a id="get-cooking-btn" class="btn get-cooking-btn" name="button" href="{{ route('menu') }}">See Plans</a>
 </div>

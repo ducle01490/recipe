@@ -9,7 +9,7 @@
         <div class="content">
           <div class="content--header">
             <h5 class="section-title">
-              Hộp Xanh nguyên liệu có
+              What’s Inside a Chefy Box
             </h5>
           </div>
           <ul class="content--list">
@@ -21,7 +21,7 @@
 
               </div>
               <div class="checklist-item--description">
-                Rau củ, quả tươi và ngon
+                Farm-fresh, seasonal vegetables
               </div>
             </li>
             <li class="checklist-item">
@@ -32,7 +32,7 @@
 
               </div>
               <div class="checklist-item--description">
-                Thịt sạch có truy xuất nguồn gốc
+                Meat from natural-bred animals with no antibiotics and hormones
               </div>
             </li>
             <li class="checklist-item">
@@ -43,7 +43,7 @@
 
               </div>
               <div class="checklist-item--description">
-                Gia vị, phụ gia àn toàn
+                Verified-origin spices
               </div>
             </li>
             <li class="checklist-item">
@@ -54,7 +54,7 @@
 
               </div>
               <div class="checklist-item--description">
-                ...và mọi thứ bạn cần!
+                ...and everything else you need!
               </div>
             </li>
           </ul>
@@ -63,7 +63,7 @@
           </div>
           <div class="content--details">
             <div class="pricing">
-              <div class="pricing--content">
+              <!-- <div class="pricing--content">
                 <div class="pricing--header">
                   Đang ưu đãi
                 </div>
@@ -74,12 +74,12 @@
                   miễn phí vận chuyển
                 </div>
                 <img class="legacy hide" src="{{asset('/images/home/freedelivery.svg')}}" alt="healthy fresh ingredients free delivery stamp">
-              </div>
-              <a class="btn" name="button" id="choose-plan-btn" href="#">Xem chi tiết</a>
+              </div> -->
+              <a class="btn" name="button" id="choose-plan-btn" href="#">Start Having Fresh</a>
             </div>
-            <div class="content--details--footer">
+            <!-- <div class="content--details--footer">
               Không cần đăng nhập, đặt hàng trước 24h
-            </div>
+            </div> -->
           </div>
         </div>
       </div>

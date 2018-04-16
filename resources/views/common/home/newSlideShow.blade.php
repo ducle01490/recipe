@@ -17,7 +17,7 @@
     							data-speed="500"
     							data-easing="Power3.easeInOut"
     							data-endspeed="300"
-    							style="z-index: 2;"><h2 style="font-weight: 700;">Khơi dậy hứng khởi vào bếp!</h2>
+    							style="z-index: 2;"><h2 style="font-weight: 700;">HOME COOKING MADE SIMPLE</h2>
     						</div>
     						
     						<div class="slide-a tp-caption customin"
@@ -28,7 +28,7 @@
     							data-start="1800"
     							data-easing="Power3.easeInOut"
     							data-endspeed="500"
-    							style="z-index: 3"><a href="#">Xem thực đơn</a>
+    							style="z-index: 3"><a href="#">Get started</a>
     						</div>
     					</li>
     				</ul>

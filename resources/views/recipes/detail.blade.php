@@ -142,13 +142,13 @@
                 <h1 class="product-title">{{$recipe->title}}</h1>
                 @if(isset($compilation) && !empty($compilation))
                 <?php $detailUrl = Helper::toURI($compilation->title.'-'.$compilation->id, '-'); ?>
-                <h3 class="text-center">Thực đơn này làm trong nhóm: <a style="color: #18c1ee;" href="{{route("compilation_detail", $detailUrl)}}">{{$compilation->title}}<span class="small" style="color: #18c1ee;"> ▶</span>︎</a></h3>
+                <h3 class="text-center">from the video: <a style="color: #18c1ee;" href="{{route("compilation_detail", $detailUrl)}}">{{$compilation->title}}<span class="small" style="color: #18c1ee;"> ▶</span>︎</a></h3>
                 @endif
                 <div class="product-share">
                         <ul>
                             <li>
                                 <?php $detailUrl = Helper::toURI($recipe->title.'-'.$recipe->id, '-'); ?>
-                                <a type="button" class="share-facebook" href="https://www.facebook.com/sharer.php?u={{urlencode(route("recipe_detail", $detailUrl))}}" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;" rel="nofollow"><i class="fa fa-facebook"></i></i> Chia sẻ</a>
+                                <a type="button" class="share-facebook" href="https://www.facebook.com/sharer.php?u={{urlencode(route("recipe_detail", $detailUrl))}}" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;" rel="nofollow"><i class="fa fa-facebook"></i></i> Share now</a>
                             </button>
                             </li>
                         </ul>
@@ -206,14 +206,18 @@
         <div class="col-lg-7 col-md-7 col-sm-12">
             <div class="row">
                 <div class="col-md-4 col-sm-12">
-                    <h3>Nguyên liệu</h3>
-                    <h4>cho <b class="text-danger">{{$recipe->serving}}</b> phần ăn</h4>
+                    <h3>Ingredients</h3>
+                    @if($recipe->serving > 1)
+                    <h4>for <b class="text-danger">{{$recipe->serving}}</b> servings</h4>
+                    @else
+                    <h4>for <b class="text-danger">{{$recipe->serving}}</b> serving</h4>
+                    @endif
                     <div class="ul_list">
                         {!!$recipe->ingredient!!}
                     </div>
                 </div>
                 <div class="col-md-8 col-sm-12">
-                    <h3>Tiến hành</h3>
+                    <h3>Preparation</h3>
                     <div class="ul_list_default">
                         {!!$recipe->preparation!!}
                     </div>
@@ -232,7 +236,7 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <h4 class="modal-title">Đặt hàng: {{$recipe->title}}</h4>
+                    <h4 class="modal-title">Order Now: {{$recipe->title}}</h4>
                 </div>
                 {{ csrf_field() }}
                 <input type="hidden" name="productId" id="productId" value="{{$recipe->id}}"/>
