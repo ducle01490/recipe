@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Cache;
 use App\Recipe;
 use App\Compilation;
 use App\Libs\Paginator;
+use App\Menu;
+use Carbon\Carbon;
 
 class RecipeController extends Controller
 {
@@ -34,13 +36,13 @@ class RecipeController extends Controller
      */
     public function homepage(Request $request)
     {
-
         $keyCache = 'home_page_recipes';
         $minutes = 1;
         $recipes = Cache::remember($keyCache, $minutes, function () {
-            return Recipe::orderByRaw('RAND()')->where('status', 1)->take(12)->get();
+            $dt = Carbon::tomorrow();
+            $dtSevent = Carbon::tomorrow()->addDays(7);
+            return Menu::whereDate('publishDate', '>=', $dt)->whereDate('publishDate', '<', $dtSevent)->get();
         });
-
 
         return view('index', compact('recipes'));
     }

@@ -85,7 +85,9 @@
       </div>
     </div>
 
+    @if(count($recipes) > 0)
     @include('common.home.nextweek')
+    @endif
 
   </div>
 </section>
