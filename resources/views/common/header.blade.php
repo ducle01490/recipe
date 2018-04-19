@@ -51,9 +51,6 @@
                     </div>
                     <a href="#" class="open_close" id="close_in"><i class="fa fa-times fa-2x" aria-hidden="true"></i></a>
                     <ul>
-                        <li class="submenu">
-                            <a href="{{ route('homepage') }}"><i class="icon_house_alt"></i> Homepage</a>
-                        </li>
                         <li><a href="{{ route('menu') }}"><i class="ic icon-calendar-2"></i> Menus</a></li>
                         <li><a href="{{ route('recipes') }}"><i class="ic icon-recipes"></i> Recipes</a></li>
                     </ul>

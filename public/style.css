@@ -160,6 +160,10 @@ iframe {
     padding-top: 60px
 }
 
+.container {
+    padding-right: 0px;
+    padding-left: 0px;
+}
 .text-shrink {
     width: 65%;
     margin: 0 auto
@@ -969,15 +973,17 @@ header .main-menu .menu-wrapper li a i {
 
 /*.col-new-recipe start*/
 .col-new-recipe {
-    margin: auto auto 35px;
+    font-size: 16px;
+    margin: .5em;
     max-width: 350px;
     text-align: left;
+    margin-bottom: 1em;
 }
 
 .col-new-recipe .photo {
     width: 100%;
-    /*height: 200px;*/
-    overflow: hidden
+    overflow: hidden;
+    border-radius: 4pt;
 }
 
 .col-new-recipe .photo img {
@@ -1104,6 +1110,11 @@ header .main-menu .menu-wrapper li a i {
 	display: -ms-flexbox;
 	display:         flex;
 	flex-wrap: wrap;
+    margin-top: 1em;
+}
+
+.row-new-recipe .col-md-3.col-sm-6.col-xs-6 {
+    padding: 0px;
 }
 
 
@@ -4739,5 +4750,8 @@ ul.footer-contact li {
     }
     .plan_time {
         padding: 0 5px;
+    }
+    .col-new-recipe {
+        margin-bottom: .5em;
     }
 }
