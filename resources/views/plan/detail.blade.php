@@ -124,7 +124,6 @@
     transition: background-color .2s;
 }
 
-
 @media screen and (min-width: 1200px) {
     .recipe_top {
         margin-bottom: 30px;
@@ -139,11 +138,11 @@
                 <h1 class="product-title">{{$recipe->title}}</h1>
                 <div class="product-share">
                         <ul>
-                            <li><button type="button" class="single-add-to-cart-button" data-toggle="modal" data-target="#modal-buy"><i class="icon_cart_alt"></i> Mua ngay
+                            <li><button type="button" class="single-add-to-cart-button" data-toggle="modal" data-target="#modal-buy"><i class="icon_cart_alt"></i> Book now
                             </button></li>
                             <li>
                                 <?php $detailUrl = Helper::toURI($recipe->title.'-'.$recipe->id, '-'); ?>
-                                <a type="button" class="share-facebook" href="https://www.facebook.com/sharer.php?u={{urlencode(route("plan_detail", $detailUrl))}}" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;" rel="nofollow"><i class="fa fa-facebook"></i></i> Chia sẻ</a>
+                                <a type="button" class="share-facebook" href="https://www.facebook.com/sharer.php?u={{urlencode(route("plan_detail", $detailUrl))}}" onclick="window.open(this.href, 'mywin','left=50,top=50,width=600,height=350,toolbar=0'); return false;" rel="nofollow"><i class="fa fa-facebook"></i></i> Share now</a>
                             </button>
                             </li>
                         </ul>
@@ -191,14 +190,18 @@
         <div class="col-lg-7 col-md-7 col-sm-12">
             <div class="row">
                 <div class="col-md-4 col-sm-12">
-                    <h3>Nguyên liệu</h3>
-                    <h4>cho <b class="text-danger">{{$recipe->serving}}</b> phần ăn</h4>
+                    <h3>Ingredients</h3>
+                    @if(count($recipe->serving) > 1)
+                    <h4>for <b class="text-danger">{{$recipe->serving}}</b> servings</h4>
+                    @else
+                    <h4>for <b class="text-danger">{{$recipe->serving}}</b> serving</h4>
+                    @endif
                     <div class="ul_list">
                         {!!$recipe->ingredient!!}
                     </div>
                 </div>
                 <div class="col-md-8 col-sm-12">
-                    <h3>Tiến hành</h3>
+                    <h3>Preparation/h3>
                     <div class="ul_list_default">
                         {!!$recipe->preparation!!}
                     </div>
@@ -217,7 +220,7 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <h4 class="modal-title">Đặt hàng: {{$recipe->title}}</h4>
+                    <h4 class="modal-title text-center">{{$recipe->title}}</h4>
                 </div>
                 {{ csrf_field() }}
                 <input type="hidden" name="productId" id="productId" value="{{$recipe->id}}"/>
@@ -242,50 +245,67 @@
 
                     <div class="form-login" id="body-form">
                         <div class="box-body">
-                            <div class="form-group">
-                                <label class="price">Đơn giá: <span class="product-amount">{{number_format($recipe->price, 0, ',', '.')}} VNĐ</span></label>
+                            <div class="row">
+                                <div class="form-group col-xs-5 col-sm-3">Price for 2 servings:</div>
+                                <div class="form-group col-xs-7 col-sm-9"><b>{{number_format($recipe->price, 0, ',', '.')}} VNĐ</b></div>
                             </div>
 
-                            <div class="form-group">
-                                <label for="name">Tên</label>
-                                <input type="text" class="form-control" id="name" value="{{ old('name') }}" placeholder="Tên" required="">
-                                <span class="text-danger">
-                                    <strong id="name-error"></strong>
-                                </span>
+                            <div class="row">
+                                <div class="form-group col-xs-5 col-sm-3">Pick your plan:</div>
+                                <div class="form-group col-xs-7 col-sm-9">
+                                    <b>
+                                        <select style="display:  inline-block;">
+                                            <option>2 servings</option>
+                                            <option>4 servings</option>
+                                        </select>
+                                    </b>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group col-xs-5 col-sm-3">Total price:</div>
+                                <div class="form-group col-xs-7 col-sm-9"><b><label><span class="product-amount">{{number_format($recipe->price, 0, ',', '.')}} VNĐ</span></label></b></div>
+                            </div>
+
+
+
+                            <div class="row">
+                                <div class="form-group col-sm-6" style="margin-bottom: 0px;">
+                                    <label for="name">Your name</label>
+                                    <input type="text" class="form-control" id="name" value="{{ old('name') }}" placeholder="Name" required="">
+                                    <span class="text-danger">
+                                        <strong id="name-error"></strong>
+                                    </span>
+                                </div>
+                                <div class="form-group col-sm-6" style="margin-bottom: 0px;">
+                                    <label for="phone">Phone number</label>
+                                    <input type="text" class="form-control" id="phone" value="{{ old('phone') }}" placeholder="Phone number" required="">
+                                    <span class="text-danger">
+                                        <strong id="phone-error"></strong>
+                                    </span>
+                                </div>
                             </div>
                             <div class="form-group">
-                                <label for="address">Địa chỉ</label>
-                                <input type="text" class="form-control" id="address" value="{{ old('address') }}" placeholder="Địa chỉ" required="">
+                                <label for="address">Address</label>
+                                <input type="text" class="form-control" id="address" value="{{ old('address') }}" placeholder="Address" required="">
                                 <span class="text-danger">
                                     <strong id="address-error"></strong>
                                 </span>
                             </div>
                             <div class="form-group">
-                                <label for="phone">Số điện thoại</label>
-                                <input type="text" class="form-control" id="phone" value="{{ old('phone') }}" placeholder="Số điện thoại" required="">
-                                <span class="text-danger">
-                                    <strong id="phone-error"></strong>
-                                </span>
+                                <label for="phone">Note</label>
+                                <textarea cols="form-control" id="note" value="{{ old('note') }}" placeholder="Note (delivery time...)" style="width: 100%;"></textarea>
                             </div>
-                            <div class="form-group">
-                                <label for="phone">Số lượng</label>
-                                <input type="text" class="form-control" id="quantity" value="{{ old('quantity') }}" placeholder="Số lượng" required="" value="1">
-                                <span class="text-danger">
-                                    <strong id="quantity-error"></strong>
-                                </span>
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">Ghi chú</label>
-                                <textarea cols="form-control" id="note" value="{{ old('note') }}" placeholder="Ghi chú (thời gian giao hàng...)" style="width: 100%;"></textarea>
-                            </div>
+                            <div class="text-danger" style="font-style: italic;"> * The service is only available in Hanoi</div>
+                            <div class="text-danger" style="font-style: italic;"> * Cash on Delivery</div>
                         </div>
                         <!-- /.box-body -->
                     </div>
                 </div>
                 <div class="modal-footer" id="modal-footer">
-                    <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Đóng
+                    <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Cancel
                     </button>
-                    <input type="submit" class="btn btn-primary" id="upload" value="Đặt hàng"/>
+                    <input type="submit" class="btn btn-primary" id="upload" value="Submit"/>
                 </div>
             </div>
         </form>

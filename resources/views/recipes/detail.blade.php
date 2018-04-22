@@ -13,128 +13,6 @@
 @endsection
 
 @section('content')
-
-<style type="text/css">
-.facebook.fb-share {
-    color: #fff;
-    background-color: #3b5998;
-    border-color: rgba(0,0,0,0.2);
-    padding: 8px;
-}
-.product-title {
-    font-weight: 800;
-    text-align: center;
-    color: #222;
-}
-
-.share-facebook {
-    background-color: #3b5998;
-    height: 2.625rem;
-    border-radius: 1.3125rem;
-    display: inline-block;
-    padding: 0 1.875rem;
-    color: #fff;
-    font-weight: 900;
-    text-transform: uppercase;
-    font-size: .875rem;
-    -webkit-transition: background-color .2s;
-    transition: background-color .2s;
-    line-height: 2.625rem;
-}
-
-.product-share ul {
-    text-align: center;
-}
-
-.product-share ul li {
-    display: inline-block;
-    margin: 5px;
-}
-
-.product-amount {
-    color: red;
-}
-.price {
-    width: 100%;
-    font-size: 18px;
-    text-align: center;
-}
-
-
-
-/* Wrapper that hosts the video and the overlay */
-.video-player {
-  position: relative;
-  overflow: hidden;
-}
-/* Overlay fills the parent and sits on top of the video */
-.click-to-play-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-.poster-image {
-  position: absolute;
-  z-index: 1;
-}
-.poster-image img {
-  object-fit: cover;
-}
-.video-title {
-  position: absolute;
-  z-index: 2;
-  /* Align to the top left */
-  top: 0;
-  left: 0;
-  font-size: 1.3em;
-  background-color: rgba(0,0,0,0.8);
-  color: #fafafa;
-  padding: 0.5rem;
-  margin: 0px;
-}
-.play-icon {
-  position: absolute;
-  z-index: 2;
-  width: 100px;
-  height: 100px;
-  background-image: url(/images/play-icon.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  /* Align to the middle */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  cursor: pointer;
-  opacity: 0.9;
-}
-.play-icon:hover, .play-icon:focus {
-  opacity: 1;
-}
-
-.single-add-to-cart-button {
-    background: #02cdcf;
-    height: 2.625rem;
-    border-radius: 1.3125rem;
-    display: inline-block;
-    padding: 0 1.875rem;
-    color: #fff;
-    font-weight: 900;
-    text-transform: uppercase;
-    font-size: .875rem;
-    -webkit-transition: background-color .2s;
-    transition: background-color .2s;
-}
-
-
-@media screen and (min-width: 1200px) {
-    .recipe_top {
-        margin-bottom: 30px;
-    }
-}
-</style>
-
 <div class="container margin_60">
     <div class="row recipe_top">
         <div class="col-md-12">
@@ -204,11 +82,11 @@
             @endif
         </div>
         <div class="col-lg-7 col-md-7 col-sm-12">
-            <div class="row">
+            <div class="row" style="margin-left: 0px; margin-right: 0px;">
                 <div class="col-md-4 col-sm-12">
                     <h3>Ingredients</h3>
                     @if($recipe->serving > 1)
-                    <h4>for <b class="text-danger">{{$recipe->serving}}</b> servings</h4>
+                    <h4 class="serving">for <b class="text-danger">{{$recipe->serving}}</b> servings</h4>
                     @else
                     <h4>for <b class="text-danger">{{$recipe->serving}}</b> serving</h4>
                     @endif

@@ -9,7 +9,7 @@
     						data-x="center"
     						data-start="0"></div>
     						<div class="slide-h2 tp-caption randomrotate skewtoleft tp-resizeme start"
-    							data-y="300"
+    							data-y="260"
     							data-x="center"
     							data-hoffset="0"
     							data-start="300"
@@ -17,7 +17,7 @@
     							data-speed="500"
     							data-easing="Power3.easeInOut"
     							data-endspeed="300"
-    							style="z-index: 2;"><h2 style="font-weight: 700;">HOME COOKING MADE SIMPLE</h2>
+    							style="z-index: 2;"><h2 style="font-weight: 700; text-align: center;">HOME COOKING<div>MADE SIMPLE</div></h2>
     						</div>
     						
     						<div class="slide-a tp-caption customin"

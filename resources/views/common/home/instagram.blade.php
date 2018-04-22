@@ -5,7 +5,7 @@
         <h2 class="section-title">
           Chefs at Home
         </h2>
-        <h5 class="section-title--sub-header">Share your delicious moments at the table and beyond</h5>
+        <h5 class="section-title--sub-header">Share your delicious moments at the table and beyond.</h5>
       </div>
       <div class="instagram-widget--body">
         <div class="slide-container owl-carousel our-mission" id="instagram">

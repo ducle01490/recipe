@@ -173,6 +173,15 @@
     }
 }
 
+@media only screen and (min-width:832px) {
+    .product-title {
+        font-size: 56px;
+    }
+    .plan_title {
+        font-size: 56px;
+    }
+}
+
 @media only screen and (max-width:991px) {
     #header_menu,
     .main-menu li,
@@ -790,5 +799,15 @@
     .row-new-recipe .col-md-3.col-sm-6.col-xs-6 {
         padding-right: 0px;
         padding-left: 0px;
+    }
+        .menu-col-item {
+        /*margin: 5px;*/
+        padding: 5px;
+    }
+    .plan_time {
+        padding: 0 5px;
+    }
+    .col-new-recipe {
+        margin-bottom: .5em;
     }
 }

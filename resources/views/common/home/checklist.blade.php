@@ -32,7 +32,7 @@
 
               </div>
               <div class="checklist-item--description">
-                Meat from natural-bred animals with no antibiotics and hormones
+                Meat from natural-bred animals with no added hormones
               </div>
             </li>
             <li class="checklist-item">
@@ -63,31 +63,26 @@
           </div>
           <div class="content--details">
             <div class="pricing">
-              <!-- <div class="pricing--content">
+              <div class="pricing--content">
                 <div class="pricing--header">
-                  Đang ưu đãi
+                  No sign in required and
                 </div>
                 <div class="pricing--cost">
                   100%
                 </div>
                 <div class="pricing--cost-subheader">
-                  miễn phí vận chuyển
+                  FREE Shipping
                 </div>
                 <img class="legacy hide" src="{{asset('/images/home/freedelivery.svg')}}" alt="healthy fresh ingredients free delivery stamp">
-              </div> -->
+              </div>
               <a class="btn" name="button" id="choose-plan-btn" href="#">Start Having Fresh</a>
             </div>
-            <!-- <div class="content--details--footer">
-              Không cần đăng nhập, đặt hàng trước 24h
-            </div> -->
+            <div class="content--details--footer">
+              All orders placed before 12pm GMT to be dispatched the following day.
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-    @if(count($recipes) > 0)
-    @include('common.home.nextweek')
-    @endif
-
   </div>
 </section>

@@ -6,8 +6,9 @@
       <div class="col-xs-10 col-md-12 benefits--container">
         <div class="value-prop-header">
           <div class="col-xs-12">
-            <h2>
-              Start Loving Dinner in a Whole New Way
+            <h2 class="text-center">
+              Our customers are cooking up
+              <div style="padding-top: 10px;">their delightful dinners with confidence.</div>
             </h2>
           </div>
         </div>
@@ -26,7 +27,7 @@
           </li>
         </ul>
 
-        <a href="{{route('menu')}}" id="discover-mission-btn" class="btn" name="button">Start Having Fresh</a>
+        <a href="{{route('menu')}}" id="discover-mission-btn" class="btn" name="button">Discover How</a>
       </div>
       <div class="col-xs-1 small-only benefits--buffer">
       </div>

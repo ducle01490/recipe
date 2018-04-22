@@ -1,79 +1,23 @@
 @extends('layouts.master')
 
 @section('content')
-<style type="text/css">
-    .text-red {
-        color: #f43192;
-    }
-    .menu-item .photo img {
-    width: 100%;
-    transition: all .5s ease;
-    transform: scale(1, 1)
-}
-
-.menu-item:hover img {
-    transform: scale(1.2, 1.2);
-    transition: all .5s ease
-}
-
-.menu-item .image-fader {
-    position: absolute;
-    left: 10px;
-    background-color: rgba(0, 0, 0, .3);
-    border-radius: 0;
-    opacity: 0;
-    -webkit-transition: all .3s ease;
-    transition: all .3s ease;
-    -webkit-transform: scale(.4) rotate(50deg);
-    -moz-transform: scale(.4) rotate(50deg);
-    -ms-transform: scale(.4) rotate(50deg);
-    -o-transform: scale(.4) rotate(50deg)
-}
-
-.menu-item:hover .image-fader {
-    opacity: 1;
-    -webkit-transform: rotate(0);
-    -moz-transform: rotate(0);
-    -ms-transform: rotate(0);
-    -o-transform: rotate(0)
-}
-.menu-item .menu-title {
-    text-align: left;
-}
-
-@media screen and (min-width: 1200px) {
-
-.row-tomorow {
-    -ms-flex-align: center;
-    align-items: center;
-
-        display: -ms-flexbox;
-    display: flex;
-}
-
-.row-tomorow .plan_title {
-    padding: 10px;
-    background: #fe0;
-}
-
-.recipe-order-title .plan_time {
-    background: #fe0;
-}
-
-.recipe-order-title {
-    padding-bottom: 40px;
-}
-}
-
-</style>
 
 <script async src="https://cdn.ampproject.org/v0.js"></script>
 
 <div class="container margin_60">
+    <div class="row recipe_top">
+        <div class="col-md-12">
+            <div class="single-product text-center" style="margin-bottom: 0px;">
+                <h1 class="product-title">Start Planning for Great at Dinnertime</h1>
+            </div>
+        </div>
+    </div>
+
+
     <div class="row row-tomorow">
         <div class="col-md-7 col-sm-6 col-xs-12">
             <div class="recipe-order-title">
-                <div class="plan_time">Ngày mai: {{$tomorrow}} sẽ có: </div>
+                <div class="plan_time">What's for Dinner Tomorrow? </div>
                 @if(is_null($tomorowMenu))
                 <h1 class="plan_title">Chưa có thông tin thực đơn!</h1>
                 @else
@@ -101,13 +45,13 @@
     </div>
 
     @if(count($sevenMenus) > 0)
-    <div class="text-red">
-        <h5>THỰC ĐƠN CÁC NGÀY GẦN ĐÂY</h5>
+    <div class="text-red" style="display: inline-block; font-weight: 800; color: #000; margin-left: -8px;">
+        <div style="background-color: #fe0; padding: 1em; margin-bottom: 1em; margin-top: 1em;"><span>ON THE FOLLOWING DAYS</span></div>
     </div>
-    <div class="row plan_dish">
+    <div class="row flexthis row-new-recipe recipes">
         @foreach($sevenMenus as $menu)
-        <div class="col-md-3 col-sm-6 col-xs-6 menu-col-item">
-            <div class="menu-item text-left">
+        <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="col-new-recipe">
                 <?php $detailUrl1 = Helper::toURI($menu->title.'-'.$menu->id, '-'); ?>
                 <a href="{{ route("plan_detail", $detailUrl) }}">
                     <div class="menu-img">
@@ -118,10 +62,10 @@
                               alt="{{$menu->title}}"></amp-img>
                     </div>
                 </a>
-                <div class="menu-content">
-                    <h3 class="menu-title"><a href="{{ route("plan_detail", $detailUrl1) }}">{{$menu->title}}</a></h3>
-                    <div class="plan_item_bottom">
-                        <span class="plan_time">Ngày: {{ (new Carbon\Carbon($menu->publishDate))->format('d/m/Y')}}</span>
+                <div class="recipe-title">
+                    <h3 style="margin-bottom: 0px;"><a href="{{ route("plan_detail", $detailUrl1) }}">{{$menu->title}}</a></h3>
+                    <div class="plan_item_bottom" style="padding-bottom: 16px;">
+                        <span class="plan_time_item"">Available on {{ (new Carbon\Carbon($menu->publishDate))->format('d/m/Y')}}</span>
                     </div>
                 </div>
             </div>

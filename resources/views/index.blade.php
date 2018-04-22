@@ -19,6 +19,10 @@
 
   @include('common.home.checklist')
 
+  @if(count($recipes) > 0)
+    @include('common.home.nextweek')
+  @endif
+
   @include('common.home.benefit')
 
   @include('common.home.instagram')
