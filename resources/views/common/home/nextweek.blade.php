@@ -8,7 +8,7 @@
 		<div class="item">
 			<div class="card">
 				<?php $detailUrl = Helper::toURI($recipe->title.'-'.$recipe->id, '-'); ?>
-				<a target="_blank" href="{{route("plan_detail", $detailUrl)}}"><img src="{{$recipe->thumb}}">
+				<a target="_blank" href="{{route("plan_detail", $detailUrl)}}"><img class="card-img" src="{{$recipe->thumb}}">
 					<div class="card-body">
 						<div class="card-text">
 							<div class="card-title">{{$recipe->title}}</div>

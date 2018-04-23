@@ -88,7 +88,7 @@
       itemsDesktopSmall : true,
       itemsTablet: false,
       itemsMobile : false,
-      margin:10,
+      margin:30,
       loop: true
  
     });
