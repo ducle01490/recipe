@@ -4935,3 +4935,8 @@ padding-right: 8px;
     -ms-flex-pack: center;
     justify-content: center;
 }
+
+.row {
+    margin-left: auto;
+    margin-right: auto;
+}

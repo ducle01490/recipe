@@ -1,5 +1,5 @@
 <footer style="padding-top: 0px;">
-    <div style="background-color: #f4f4f4; padding: 20px;">
+    <div style="background-color: #f4f4f4; padding: 8px;">
         <div class="container" >
             <div class="sub-footer">
                 <div class="row">
@@ -7,7 +7,7 @@
                         <h1>Reliable Delivery</h1>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" style="margin-left: auto; margin-right: auto;">
                     <div class="col-sm-12 col-md-4 col-lg-4">
                         <h3 class="text-center">Pre-Portioned</h3>
                         <p>Get the ingredients you need in just the right amounts to cook the recipes you choose.</p>
