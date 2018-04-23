@@ -30,7 +30,7 @@
 
 <header class="sticky">
     <div class="container">
-        <div class="row">
+        <div class="row row-header">
             <div class="col-md-2 col-sm-4 col-xs-4">
                 <a href="{{route('homepage')}}" id="logo">
                     <img src="{{ asset("images/logo.png") }}" alt="">

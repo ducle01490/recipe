@@ -173,12 +173,16 @@
     }
 }
 
-@media only screen and (min-width:832px) {
+@media only screen and (min-width:767px) {
     .product-title {
         font-size: 56px;
     }
     .plan_title {
         font-size: 56px;
+    }
+    .md-flex-row {
+        -ms-flex-direction: row;
+        flex-direction: row;
     }
 }
 
@@ -574,6 +578,16 @@
     .apps-image img {
         margin-bottom: 20px
     }
+    .row-new-recipe, .row-tomorow {
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+    .text-sub-info {
+        margin-left: 16px;
+    }
+    .plan_title {
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width:680px) {
@@ -790,11 +804,6 @@
     }
     #review-box .user-rate-wrap .user-rating-text {
         float: none
-    }
-    .row-new-recipe
-    {
-        margin-left: 0.5em;
-        margin-right: 0.5em;
     }
     .row-new-recipe .col-md-3.col-sm-6.col-xs-6 {
         padding-right: 0px;

@@ -4,6 +4,7 @@
 
 <script async src="https://cdn.ampproject.org/v0.js"></script>
 
+<div class="white_bg">
 <div class="container margin_60">
     <div class="row recipe_top">
         <div class="col-md-12">
@@ -14,8 +15,8 @@
     </div>
 
 
-    <div class="row row-tomorow">
-        <div class="col-md-7 col-sm-6 col-xs-12">
+    <div class="row row-tomorow flexthis xs-flex-column md-flex-row">
+        <div class="col-md-7 col-sm-6 col-xs-12 xs-flex-column xs-flex-justify-center">
             <div class="recipe-order-title">
                 <div class="plan_time">What's for Dinner Tomorrow? </div>
                 @if(is_null($tomorowMenu))
@@ -74,6 +75,6 @@
     </div><!-- End row -->
     @endif
 </div>
-
+</div>
 
 @endsection

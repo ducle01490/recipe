@@ -15,10 +15,10 @@
 
 @section('content')
 
-
-<div class="container margin_60">
-    <div class="row row-tomorow">
-        <div class="col-md-7 col-sm-6 col-xs-12">
+<div class="white_bg">
+<div class="container margin_60 compilation">
+    <div class="row row-tomorow flexthis xs-flex-column md-flex-row">
+        <div class="col-md-7 col-sm-6 col-xs-12 xs-flex-column xs-flex-justify-center">
             <div class="recipe-order-title">
                 @if(is_null($compilation))
                 <h1 class="plan_title">Chưa có thông tin thực đơn!</h1>
@@ -78,8 +78,8 @@
     </div>
 
     @if(count($recipes) > 0)
-    <div class="text-red" style="display: inline-block; font-weight: 800; color: #000; margin-left: -8px;">
-        <div style="background-color: #fe0; padding: 1em; margin-bottom: 1em; margin-top: 1em;"><span>IN THIS VIDEO</span></div>
+    <div class="text-sub-info" style="display: inline-block; font-weight: 800; color: #000;">
+        <div style="background-color: #fe0; padding: 0.5em; margin-bottom: 0.7em; margin-top: 1em;"><span>IN THIS VIDEO</span></div>
     </div>
     <div class="row flexthis row-new-recipe recipes">
         @foreach($recipes as $recipe)
@@ -104,6 +104,6 @@
     </div><!-- End row -->
     @endif
 </div>
-
+</div>
 
 @endsection
