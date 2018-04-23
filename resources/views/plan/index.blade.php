@@ -46,8 +46,12 @@
     </div>
 
     @if(count($sevenMenus) > 0)
-    <div class="text-sub-info" style="display: inline-block; font-weight: 800; color: #000;">
-        <div style="background-color: #fe0; padding: 0.5em; margin-bottom: 0.7em; margin-top: 1em;"><span>ON THE FOLLOWING DAYS</span></div>
+    <div class="row row-sub-info">
+        <div class="col-sm-12">
+            <div class="text-sub-info" style="display: inline-block; font-weight: 800; color: #000;">
+                <div style="background-color: #fe0; padding: 0.5em; margin-bottom: 0.7em; margin-top: 1em;"><span>ON THE FOLLOWING DAYS</span></div>
+            </div>
+        </div>
     </div>
     <div class="row flexthis row-new-recipe recipes">
         @foreach($sevenMenus as $menu)

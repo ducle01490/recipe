@@ -578,12 +578,9 @@
     .apps-image img {
         margin-bottom: 20px
     }
-    .row-new-recipe, .row-tomorow {
+    .row-new-recipe, .row-tomorow, .row-sub-info {
         margin-left: 0.5em;
         margin-right: 0.5em;
-    }
-    .text-sub-info {
-        margin-left: 16px;
     }
     .plan_title {
         text-align: center;
