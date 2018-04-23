@@ -63,7 +63,7 @@
         <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a>.</p>
     <![endif]-->
     <!-- Preload spinner -->
-    <div id="loader-wrapper">
+    <!-- <div id="loader-wrapper">
         <div class="spinner">
             <div class="rect1"></div>
             <div class="rect2"></div>
@@ -71,7 +71,8 @@
             <div class="rect4"></div>
             <div class="rect5"></div>
         </div>
-    </div><!-- End Preload spinner -->
+    </div> -->
+    <!-- End Preload spinner -->
 
     <!--Wrapper-->
     <div id="wrap">

@@ -588,6 +588,9 @@
     .plan_title {
         text-align: center;
     }
+    .plan_time {
+        display: block;
+    }
 }
 
 @media only screen and (max-width:680px) {

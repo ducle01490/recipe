@@ -82,7 +82,7 @@
             @endif
         </div>
         <div class="col-lg-7 col-md-7 col-sm-12">
-            <div class="row" style="margin-left: 0px; margin-right: 0px;">
+            <div class="row recipe_cook">
                 <div class="col-md-4 col-sm-12">
                     <h3>Ingredients</h3>
                     @if($recipe->serving > 1)

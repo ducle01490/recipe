@@ -65,7 +65,7 @@
 
                 </div>
             @else
-                <div class="photo">
+                <div class="photo photo-top">
                         <amp-img src="{{$compilation->thumb}}"
                               width="100"
                               height="100"

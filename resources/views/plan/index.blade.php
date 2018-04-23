@@ -5,7 +5,7 @@
 <script async src="https://cdn.ampproject.org/v0.js"></script>
 
 <div class="white_bg">
-<div class="container margin_60">
+<div class="container margin_60 menus">
     <div class="row recipe_top">
         <div class="col-md-12">
             <div class="single-product text-center" style="margin-bottom: 0px;">
@@ -32,7 +32,7 @@
             <div class="col-new-recipe">
                 <?php $detailUrl = Helper::toURI($tomorowMenu->title.'-'.$tomorowMenu->id, '-'); ?>
                 <a href="{{ route("plan_detail", $detailUrl) }}">
-                    <div class="photo">
+                    <div class="photo photo-top">
                         <amp-img src="{{$tomorowMenu->thumb}}"
                               width="100"
                               height="100"
@@ -46,8 +46,8 @@
     </div>
 
     @if(count($sevenMenus) > 0)
-    <div class="text-red" style="display: inline-block; font-weight: 800; color: #000; margin-left: -8px;">
-        <div style="background-color: #fe0; padding: 1em; margin-bottom: 1em; margin-top: 1em;"><span>ON THE FOLLOWING DAYS</span></div>
+    <div class="text-sub-info" style="display: inline-block; font-weight: 800; color: #000;">
+        <div style="background-color: #fe0; padding: 0.5em; margin-bottom: 0.7em; margin-top: 1em;"><span>ON THE FOLLOWING DAYS</span></div>
     </div>
     <div class="row flexthis row-new-recipe recipes">
         @foreach($sevenMenus as $menu)

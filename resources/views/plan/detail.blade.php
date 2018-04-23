@@ -188,7 +188,7 @@
             </div>
         </div>
         <div class="col-lg-7 col-md-7 col-sm-12">
-            <div class="row">
+            <div class="row recipe_cook">
                 <div class="col-md-4 col-sm-12">
                     <h3>Ingredients</h3>
                     @if(count($recipe->serving) > 1)
@@ -201,7 +201,7 @@
                     </div>
                 </div>
                 <div class="col-md-8 col-sm-12">
-                    <h3>Preparation/h3>
+                    <h3>Preparation</h3>
                     <div class="ul_list_default">
                         {!!$recipe->preparation!!}
                     </div>
