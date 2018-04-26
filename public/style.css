@@ -1099,7 +1099,8 @@ header .main-menu .menu-wrapper li a i {
 }
 
 .col-new-recipe h3 a {
-	color: #0F346C;
+	/*color: #0F346C;*/
+    color: #000;
 }
 
 /*.col-new-recipe END*/
@@ -4779,7 +4780,8 @@ ul.footer-contact li {
     font-weight: 400;
     font-size: 13px;
     margin: 8px;
-    color: #0F346C;
+    /*color: #0F346C;*/
+    color: #000;
 }
 .facebook.fb-share {
     color: #fff;
