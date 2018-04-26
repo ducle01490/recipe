@@ -37,7 +37,7 @@
                         <!-- <li><a href="#"><i class="fa fa-vimeo"></i></a></li> -->
                         <!-- <li><a href="#"><i class="fa fa-youtube-play"></i></a></li> -->
                     </ul>
-                    <p>Chefy.vn  |  All Rights Reserved.<br /></p>
+                    <p>Contact us: <a href="mailto:help@chefy.vn">help@chefy.vn</a></p>
                 </div>
             </div>
         </div>

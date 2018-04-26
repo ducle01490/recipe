@@ -183,9 +183,9 @@
                     layout="fill"
                     src="{{$recipe->thumb}}">
                 </amp-img>
-                </div>
-
             </div>
+            </div>
+            <p class="xs-mt05 xs-mx2 sm-mx0 xs-text-5 text-gray-lightest">Inspired by <a href="https://tasty.co" target="_blank" class="link-tasty" rel="noopener noreferrer">Tasty</a></p>
         </div>
         <div class="col-lg-7 col-md-7 col-sm-12">
             <div class="row recipe_cook">
