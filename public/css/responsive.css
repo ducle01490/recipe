@@ -177,7 +177,7 @@
     .product-title {
         font-size: 56px;
     }
-    .plan_title {
+    .header.sticky {
         font-size: 56px;
     }
     .md-flex-row {
@@ -187,6 +187,11 @@
 }
 
 @media only screen and (max-width:991px) {
+    .header.sticky {
+        max-height: 52px;
+        position: static;
+    }
+
     #header_menu,
     .main-menu li,
     header.style1 .container,

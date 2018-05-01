@@ -13,7 +13,7 @@
         display: inline-block;
     }
     .main-menu-mobile li a {
-        color: #fff;
+        color: #0f346c;
         padding: 8px;
         font-size: 15px;
         margin: 0;

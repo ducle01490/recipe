@@ -349,8 +349,8 @@ header {
 header {
     padding: 10px 0 0;
     z-index: 9999;
-    background: #0F346C;
-    min-height: 50px;
+    background: #ffffff;
+    max-height: 68px;
     transition: all .3s;
     top: auto
 }
@@ -400,9 +400,10 @@ header.sticky {
     top: 0;
     left: 0;
     width: 100%;
-    -webkit-box-shadow: 0 2px 10px -2px rgba(0, 0, 0, .41);
-    -moz-box-shadow: 0 2px 10px -2px rgba(0, 0, 0, .41);
-    box-shadow: 0 2px 10px -2px rgba(0, 0, 0, .41);
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.08);
+    -moz-box-shadow: 0 1px 0 rgba(0,0,0,0.08);
+    background-color: #ffffff;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.08);
     z-index: 9999
 }
 
@@ -435,7 +436,7 @@ header.sticky #logo img {
 }
 
 .main-menu>ul>li>a {
-    color: #fff;
+    color: #6a6d75;
     padding: 5px 15px 15px;
     font-size: 16px;
     margin: 0;
