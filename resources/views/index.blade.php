@@ -2,7 +2,7 @@
 
 @section('header')
   <link rel="stylesheet" href="{{ asset('/css/settings.css') }}">
-  <link rel="stylesheet" href="{{ asset('/blueapron.css') }}">
+  <link rel="stylesheet" href="{{ asset('/home.css') }}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
 
@@ -78,10 +78,10 @@
       paginationSpeed : 400,
       responsive:{
           0:{
-              items:1
+              items:2
           },
           600:{
-              items:3
+              items:4
           }
       },
       itemsDesktop : false,

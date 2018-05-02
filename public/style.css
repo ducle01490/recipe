@@ -157,7 +157,7 @@ iframe {
 .add_top_60,
 .margin_60,
 .margin_60_35 {
-    padding-top: 60px
+    padding-top: 86px
 }
 
 .container {
@@ -347,9 +347,9 @@ header {
 }
 
 header {
-    padding: 10px 0 0;
+    /*padding: 10px 0 0;*/
     z-index: 9999;
-    background: #ffffff;
+    background: #0F346C;
     max-height: 68px;
     transition: all .3s;
     top: auto
@@ -400,10 +400,17 @@ header.sticky {
     top: 0;
     left: 0;
     width: 100%;
+<<<<<<< HEAD
     -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.08);
     -moz-box-shadow: 0 1px 0 rgba(0,0,0,0.08);
     background-color: #ffffff;
     box-shadow: 0 1px 0 rgba(0,0,0,0.08);
+=======
+    -webkit-box-shadow: 0 2px 10px -2px rgba(0, 0, 0, .41);
+    -moz-box-shadow: 0 2px 10px -2px rgba(0, 0, 0, .41);
+    box-shadow: 0 2px 10px -2px rgba(0, 0, 0, .41);
+    background-color: #fff;
+>>>>>>> 9103e8e018936f64ea03e82579a2d48bfc4991a0
     z-index: 9999
 }
 
@@ -466,6 +473,26 @@ header .main-menu .menu-wrapper li a i {
     width: 25px;
     display: inline-block;
     font-size: 14px
+}
+.main-menu-mobile {
+    padding-top: 6px;
+    width: 100%;
+    text-align: right;
+}
+.main-menu-mobile ul {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+.main-menu-mobile li{
+    display: inline-block;
+}
+.main-menu-mobile li a {
+    color: #6a6d75;
+    padding: 8px;
+    font-size: 15px;
+    margin: 0;
+    font-weight: 500;
 }
 
 #close_in,
@@ -1093,14 +1120,14 @@ header .main-menu .menu-wrapper li a i {
 }
 
 .col-new-recipe h3 {
-	font-size: 16px;
+	font-size: 18px;
     font-weight: 700;
-    line-height: 28px;
+    line-height: 21px;
     margin: 0px auto;
 }
 
 .col-new-recipe h3 a {
-	color: #0F346C;
+    color: #363236;
 }
 
 /*.col-new-recipe END*/
@@ -1118,7 +1145,7 @@ header .main-menu .menu-wrapper li a i {
 	display: -ms-flexbox;
 	display:         flex;
 	flex-wrap: wrap;
-    margin-top: 1em;
+    /*margin-top: 1em;*/
 }
 
 .compilation .row-new-recipe, .menus .row-new-recipe
@@ -1157,7 +1184,8 @@ header .main-menu .menu-wrapper li a i {
 	counter-increment: item;
 	margin-bottom: 1em;
 	list-style-type: none;
-    font-size: 1.125em;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .recipe_detail .ul_list_default li:before {
@@ -2818,8 +2846,9 @@ ul.stars li a {
     -ms-transition: all .2s linear;
     transition: all .2s linear;
     list-style: none;
-    color: #2f3239;
-    font-size: 1.125em;
+    color: #303236;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .ul_list li ul {
@@ -2838,7 +2867,7 @@ ul.stars li a {
 .ul_list_default ul li {
     margin-bottom: 5px;
     line-height: 25px;
-    color: #2f3239
+    color: #303236
 }
 
 .dropcap {
@@ -4722,16 +4751,17 @@ ul.footer-contact li {
     vertical-align: middle;
 }
 .plan_time_item {
-    background-color: rgba(46,98,175,0.08);
-    color: #2e62af;
-    font-size: 14px;
+    /*background-color: rgba(46,98,175,0.08);*/
+    color: #303236;
+    font-size: 16px;
     height: 35px;
     line-height: 35px;
     display: inline-block;
-    text-align: center;
+    /*text-align: center;*/
     white-space: nowrap;
     vertical-align: middle;
     width: 100%;
+    font-weight: 400;
 }
 
 .plan_dish {
@@ -4767,9 +4797,10 @@ ul.footer-contact li {
   height: 100%;
 }
 .plan_title {
-    color: #000;
-    font-weight: 800;
+    color: #363236;
+    font-weight: 700;
     text-align: left;
+    font-size: 30px;
 }
 
 .plan_title a {
@@ -4780,7 +4811,8 @@ ul.footer-contact li {
     font-weight: 400;
     font-size: 13px;
     margin: 8px;
-    color: #0F346C;
+    /*color: #0F346C;*/
+    color: #000;
 }
 .facebook.fb-share {
     color: #fff;
@@ -4789,9 +4821,9 @@ ul.footer-contact li {
     padding: 8px;
 }
 .product-title {
-    font-weight: 800;
+    font-weight: 700;
     text-align: center;
-    color: #222;
+    color: #363236;
 }
 
 .share-facebook {
@@ -4940,10 +4972,12 @@ padding-right: 8px;
     border-radius: 4pt;
 }
 .card-title {
-    font-size: 16px;
-    font-weight: 800;
+    font-size: 18px;
+    font-weight: 700;
+    color: #363236;
 }
 .card-subtitle {
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 400;
+    color: #303236;
 }

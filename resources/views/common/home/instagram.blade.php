@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div>
-        <h2 class="section-title">
+        <h2 class="section-title title-smaller">
           Chefs at Home
         </h2>
         <h5 class="section-title--sub-header">Share your delicious moments at the table and beyond.</h5>

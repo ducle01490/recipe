@@ -152,6 +152,7 @@
     </div>
     <div class="row recipe_detail">
         <div class="col-lg-5 col-md-5 col-sm-12 video-player-detail">
+            <h3></h3>
             <div class="video-player">
                 @if(strpos($recipe->video, 'youtube') !== false)
                 <?php 
@@ -183,18 +184,18 @@
                     layout="fill"
                     src="{{$recipe->thumb}}">
                 </amp-img>
-                </div>
-
             </div>
+            </div>
+            <p class="xs-mt05 xs-mx2 sm-mx0 xs-text-5 text-gray-lightest">Inspired by <a href="https://tasty.co" target="_blank" class="link-tasty" rel="noopener noreferrer">Tasty</a></p>
         </div>
         <div class="col-lg-7 col-md-7 col-sm-12">
             <div class="row recipe_cook">
                 <div class="col-md-4 col-sm-12">
                     <h3>Ingredients</h3>
                     @if(count($recipe->serving) > 1)
-                    <h4>for <b class="text-danger">{{$recipe->serving}}</b> servings</h4>
+                    <h4 class="serving">for <b class="text-danger">{{$recipe->serving}}</b> servings</h4>
                     @else
-                    <h4>for <b class="text-danger">{{$recipe->serving}}</b> serving</h4>
+                    <h4 class="serving">for <b class="text-danger">{{$recipe->serving}}</b> serving</h4>
                     @endif
                     <div class="ul_list">
                         {!!$recipe->ingredient!!}
@@ -247,16 +248,16 @@
                         <div class="box-body">
                             <div class="row">
                                 <div class="form-group col-xs-5 col-sm-3">Price for 2 servings:</div>
-                                <div class="form-group col-xs-7 col-sm-9"><b>{{number_format($recipe->price, 0, ',', '.')}} VNĐ</b></div>
+                                <div class="form-group col-xs-7 col-sm-9"><b id="single-price" data-price="{{$recipe->price}}">{{number_format($recipe->price, 0, ',', '.')}} đ</b></div>
                             </div>
 
                             <div class="row">
                                 <div class="form-group col-xs-5 col-sm-3">Pick your plan:</div>
                                 <div class="form-group col-xs-7 col-sm-9">
                                     <b>
-                                        <select style="display:  inline-block;">
-                                            <option>2 servings</option>
-                                            <option>4 servings</option>
+                                        <select style="display:  inline-block;" name="quantity" id="quantity">
+                                            <option value="1">2 servings</option>
+                                            <option value="2">4 servings</option>
                                         </select>
                                     </b>
                                 </div>
@@ -264,10 +265,8 @@
 
                             <div class="row">
                                 <div class="form-group col-xs-5 col-sm-3">Total price:</div>
-                                <div class="form-group col-xs-7 col-sm-9"><b><label><span class="product-amount">{{number_format($recipe->price, 0, ',', '.')}} VNĐ</span></label></b></div>
+                                <div class="form-group col-xs-7 col-sm-9"><b><label><span class="product-amount" id="total-price">{{number_format($recipe->price, 0, ',', '.')}} đ</span></label></b></div>
                             </div>
-
-
 
                             <div class="row">
                                 <div class="form-group col-sm-6" style="margin-bottom: 0px;">
@@ -285,19 +284,23 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <label for="address">Address</label>
-                                <input type="text" class="form-control" id="address" value="{{ old('address') }}" placeholder="Address" required="">
-                                <span class="text-danger">
-                                    <strong id="address-error"></strong>
-                                </span>
+                            <div class="row">
+                                <div class="form-group col-sm-12" style="margin-bottom: 0px;">
+                                    <label for="address">Address</label>
+                                    <input type="text" class="form-control" id="address" value="{{ old('address') }}" placeholder="Address" required="">
+                                    <span class="text-danger">
+                                        <strong id="address-error"></strong>
+                                    </span>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label for="phone">Note</label>
-                                <textarea cols="form-control" id="note" value="{{ old('note') }}" placeholder="Note (delivery time...)" style="width: 100%;"></textarea>
+                            <div class="row">
+                                <div class="form-group col-sm-12" style="margin-bottom: 0px;">
+                                    <label for="phone">Note</label>
+                                    <textarea cols="form-control" id="note" value="{{ old('note') }}" placeholder="Note (delivery time...)" style="width: 100%;"></textarea>
+                                </div>
+                                <div class="text-danger" style="font-style: italic;"> * The service is only available in Hanoi</div>
+                                <div class="text-danger" style="font-style: italic;"> * Cash on Delivery</div>
                             </div>
-                            <div class="text-danger" style="font-style: italic;"> * The service is only available in Hanoi</div>
-                            <div class="text-danger" style="font-style: italic;"> * Cash on Delivery</div>
                         </div>
                         <!-- /.box-body -->
                     </div>
@@ -326,10 +329,30 @@
             }
         });
 
+        // Create VND currency formatter.
+        var formatter = new Intl.NumberFormat('vi-VN', {
+          style: 'currency',
+          currency: 'VND',
+          minimumFractionDigits: 0,
+        });
+
+        var singlePrice = {{$recipe->price}};
         $('#modal-buy').on('shown.bs.modal', function (e) {
             $('#body-form').show();
             $('#modal-footer').show();
-        })
+
+            var quantity = $("#quantity").val();
+            var totalPrice = formatter.format(singlePrice * quantity);
+
+            $("#total-price").text(totalPrice);
+        });
+
+        $('#quantity').change(function() {
+            var quantity = $(this).val();
+            var totalPrice = formatter.format(singlePrice * quantity);
+
+            $("#total-price").text(totalPrice);
+        });
 
         $('#orderForm').on('submit', function(e) {
             e.preventDefault();
@@ -414,4 +437,8 @@
 
     });
 </script>
+@endsection
+
+@section("footer")
+@include('common.delivery')
 @endsection

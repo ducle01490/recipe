@@ -52,6 +52,7 @@ class OrderController extends Controller
                 'productId' => 'required|exists:menus,id'
             ]);
 
+
             if ($validator->fails()) {
                 return Response::json(['errors' => $validator->errors()]);
             }

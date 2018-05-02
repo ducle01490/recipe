@@ -36,6 +36,7 @@
     </div>
     <div class="row recipe_detail">
         <div class="col-lg-5 col-md-5 col-sm-12 video-player-detail">
+            <h3></h3>
             @if($recipe->video)
                 <div class="video-player">
                     @if(strpos($recipe->video, 'youtube') !== false)
@@ -68,9 +69,10 @@
                         layout="fill"
                         src="{{$recipe->thumb}}">
                     </amp-img>
-                    </div>
+                </div>
 
                 </div>
+                <p class="xs-mt05 xs-mx2 sm-mx0 xs-text-5 text-gray-lightest">Inspired by <a href="https://tasty.co" target="_blank" class="link-tasty" rel="noopener noreferrer">Tasty</a></p>
             @else
                 <div class="photo">
                     <amp-img src="{{$recipe->thumb}}"

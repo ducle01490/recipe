@@ -1,7 +1,7 @@
 <section class="home-page-section benefits">
   <div class="container">
 <div class="carousel-cont">
-	<h2 class="section-title refresh">Cook Your Favorite Dinners from Our Daily Menu</h2>
+	<h5 class="section-title refresh title-smaller next-week">Cook Your Favorite Dinners from Our Daily Menu</h5>
 	<div class="owl-carousel" id="next-week">
 
 		@foreach($recipes as $recipe)
