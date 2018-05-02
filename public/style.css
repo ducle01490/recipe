@@ -157,7 +157,7 @@ iframe {
 .add_top_60,
 .margin_60,
 .margin_60_35 {
-    padding-top: 60px
+    padding-top: 86px
 }
 
 .container {
@@ -347,10 +347,10 @@ header {
 }
 
 header {
-    padding: 10px 0 0;
+    /*padding: 10px 0 0;*/
     z-index: 9999;
     background: #0F346C;
-    min-height: 50px;
+    max-height: 68px;
     transition: all .3s;
     top: auto
 }
@@ -403,6 +403,7 @@ header.sticky {
     -webkit-box-shadow: 0 2px 10px -2px rgba(0, 0, 0, .41);
     -moz-box-shadow: 0 2px 10px -2px rgba(0, 0, 0, .41);
     box-shadow: 0 2px 10px -2px rgba(0, 0, 0, .41);
+    background-color: #fff;
     z-index: 9999
 }
 
@@ -435,7 +436,7 @@ header.sticky #logo img {
 }
 
 .main-menu>ul>li>a {
-    color: #fff;
+    color: #6a6d75;
     padding: 5px 15px 15px;
     font-size: 16px;
     margin: 0;
@@ -465,6 +466,26 @@ header .main-menu .menu-wrapper li a i {
     width: 25px;
     display: inline-block;
     font-size: 14px
+}
+.main-menu-mobile {
+    padding-top: 6px;
+    width: 100%;
+    text-align: right;
+}
+.main-menu-mobile ul {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+.main-menu-mobile li{
+    display: inline-block;
+}
+.main-menu-mobile li a {
+    color: #6a6d75;
+    padding: 8px;
+    font-size: 15px;
+    margin: 0;
+    font-weight: 500;
 }
 
 #close_in,
@@ -1118,7 +1139,7 @@ header .main-menu .menu-wrapper li a i {
 	display: -ms-flexbox;
 	display:         flex;
 	flex-wrap: wrap;
-    margin-top: 1em;
+    /*margin-top: 1em;*/
 }
 
 .compilation .row-new-recipe, .menus .row-new-recipe
