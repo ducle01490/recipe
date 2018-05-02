@@ -58,7 +58,7 @@
         <div class="col-md-3 col-sm-6 col-xs-6">
             <div class="col-new-recipe">
                 <?php $detailUrl1 = Helper::toURI($menu->title.'-'.$menu->id, '-'); ?>
-                <a href="{{ route("plan_detail", $detailUrl) }}">
+                <a href="{{ route("plan_detail", $detailUrl1) }}">
                     <div class="menu-img">
                         <amp-img src="{{$menu->thumb}}"
                               width="100"
