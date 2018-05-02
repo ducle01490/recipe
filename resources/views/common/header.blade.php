@@ -2,7 +2,7 @@
 
 
 .logo.logged-out {
-    /*width: 94px;*/
+    width: 147px;
     top: -7px;
 }
 .logo {
